@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Ruslan B](https://up.htmlacademy.ru/adaptive/22/user/1672121).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
