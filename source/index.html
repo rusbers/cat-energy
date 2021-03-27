@@ -1,12 +1,143 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
+    <title>Интернет-магазин питания для котов «Cat Energy»</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-mascot" src="img/header/logo-mascot.svg" width="34" height="38" alt="Логотип">
+        <img class="page-header__logo-text" src="img/header/logo-text.svg" width="101" height="18" alt="Название магазина в виде логотипа — «Cat Energy»">
+      </a>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" hidden><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item main-navigation__item--current">
+            <a>Главная</a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Интернет-магазин функционального питания для котов</h1>
+      <section class="promo">
+        <h2 class="visually-hidden">Подобрать программу питания для котов</h2>
+        <p class="title title--color">Функциональное питание для котов</p>
+        <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        <a class="promo__button button" href="form.html">Подобрать программу</a>
+        <img class="promo__image" src="img/promo/promo-item.png" width="280" height="270" alt="Оранжевая консерва с кормом для котов из ассортимента Cat Energy Pro со вкусом курицы, без консервантов и с объемом в 500 грамм.">
+      </section>
+      <section class="product-categories">
+        <h2 class="visually-hidden">Посмотреть товары в зависимости от режима питания</h2>
+        <ul class="product-categories__list">
+          <li class="product-categories__item product-categories__item--weight_lose"> <!-- модификатор для добавления соотв. декор. картинки через pseudo element -->
+            <h3 class="product-categories__title">Похудение</h3>
+            <p class="text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="product-categories__link" href="#" aria-label="Нажмите чтобы перейти на страницу каталога">Каталог slim</a>
+          </li>
+          <li class="product-categories__item product-categories__item--weight_gain"> <!-- модификатор для добавления соотв. декор. картинки через pseudo element -->
+            <h3 class="product-categories__title">Набор массы</h3>
+            <p class="text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="product-categories__link" href="#" aria-label="Нажмите чтобы перейти на страницу каталога">каталог pro</a>
+          </li>
+        </ul>
+      </section>
+      <section class="benefits">
+        <h2 class="visually-hidden">Преимущества функционального питания</h2>
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <p class="text">Функциональное питание содержит только полезные питательные вещества.</p>
+          </li>
+          <li class="benefits__item">
+            <p class="text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          </li>
+          <li class="benefits__item">
+            <p class="text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          </li>
+          <li class="benefits__item">
+            <p class="text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="result-example">
+        <h2 class="visually-hidden">Эффект применения диеты построенной на наших продуктах</h2>
+        <p class="title">Живой пример</p>
+        <p class="text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <dl class="statistics-list">
+          <div class="statistics-list__item">
+            <dt class="statistics-list__title">Снижение веса</dt>
+            <dd class="statistics-list__description">5 КГ</dd>
+          </div>
+          <div class="statistics-list__item">
+            <dt class="statistics-list__title">Затрачено времени</dt>
+            <dd class="statistics-list__description">60 ДНЕЙ</dd>
+          </div>
+          <div class="statistics-list__item">
+            <dt class="statistics-list__title">Затраты на питание</dt> <!-- Не забыть двоеточие поставить через псевдоэлемент -->
+            <dd class="statistics-list__description">15 000 РУБ</dd> <!-- Не забыть точку поставить через псевдоэлемент -->
+          </div>
+        </dl>
+        <div class="slider">
+          <div class="slider__items">
+            <img class="slider__before" src="img/slider/before.png" width="311" height="232" alt="Кот Борис с большим избыточном весом перед тем, как начать диету основанной на корме Cat Energy Slim. Окрас кота серо белый, а глаза разноцветные (один зелёный, другой жёлтый).">
+            <img class="slider__after" src="img/slider/after.png" width="251" height="240" alt="Тот же самый кот Борис, но теперь с очень стройной фигурой, которую он получил благодоря диете, основанной на корме Cat Energy Slim.">
+          </div>
+          <div class="slider__toggle-wrapper" hidden>
+            <span class="slider__state">Было</span>
+            <button class="slider__toggle-button" type="button"><span class="visually-hidden">Нажмите чтобы заметить различия</span></button> <!-- Сначала хотел через aria-label добавить. Передумал потому что если стили слетят, пользователь поймет что нажав кнопку можно будет слайд поменять -->
+            <span class="slider__state">Стало</span>
+          </div>
+          <div class="slider__range-wrapper" hidden> <!-- Элемент добавлен, потому что на других вьюпортах вместо кнопки переключателя появляется ползунок -->
+            <span class="slider__state">Было</span>
+              <div class="slider__range">
+                <div class="slider__range-bar">
+                  <button class="slider__range-toggle" tabindex="0" aria-label="Потяните ползунок чтобы заметить различия"></button>
+                </div>
+              </div>
+            <span class="slider__state">Стало</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <section class="address">
+        <h2 class="visually-hidden">Как нас найти</h2>
+        <div class="address__top-wrapper address__top-wrapper--background">
+          <p class="address__slogan">приглашаем к сотрудничеству дилеров!</p>
+          <p class="address__place">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <div class="address__bottom-wrapper">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.118506746264!2d30.3232198!3d59.9394554!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Rusia%2C%20191186!5e0!3m2!1sro!2sro!4v1616842319284!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </section>
+      <div class="page-footer__bottom">
+        <img class="page-footer__logo" src="img/footer/footer-logo.svg" width="128" height="24" alt="Название магазина в виде логотипа — «Cat Energy»">
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--vkontakte" href="#">
+              <span class="visually-hidden">Перейти на нашу страницу в Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--instagram" href="#">
+              <span class="visually-hidden">Перейти на нашу страницу в Инстаграме</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--facebook" href="#">
+              <span class="visually-hidden">Перейти на нашу страницу в Фейсбуке</span>
+            </a>
+          </li>
+        </ul>
+        <a class="page-footer__copy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
   </body>
 </html>
