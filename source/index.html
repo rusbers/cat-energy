@@ -11,7 +11,7 @@
         <img class="page-header__logo-text" src="img/header/logo-text.svg" width="101" height="18" alt="Название магазина в виде логотипа — «Cat Energy»">
       </a>
       <nav class="main-navigation">
-        <button class="main-navigation__toggle visually-hidden"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-navigation__toggle" hidden><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-navigation__list">
           <li class="main-navigation__item main-navigation__item--current">
             <a>Главная</a>
@@ -70,25 +70,31 @@
         <h2 class="visually-hidden">Эффект применения диеты построенной на наших продуктах</h2>
         <p class="title">Живой пример</p>
         <p class="text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <dl class="result-example__specifically-list">
-          <dt class="result-example__title">Снижение веса</dt>
-          <dd class="result-example__description">5 КГ</dd>
-          <dt class="result-example__title">Затрачено времени</dt>
-          <dd class="result-example__description">60 ДНЕЙ</dd>
-          <dt class="result-example__total result-example__cost">Затраты на питание</dt> <!-- Не забыть двоеточие поставить через псевдоэлемент -->
-          <dd class="result-example__total result-example__sum">15 000 РУБ</dd> <!-- Не забыть точку поставить через псевдоэлемент -->
+        <dl class="statistics-list">
+          <div class="statistics-list__item">
+            <dt class="statistics-list__title">Снижение веса</dt>
+            <dd class="statistics-list__description">5 КГ</dd>
+          </div>
+          <div class="statistics-list__item">
+            <dt class="statistics-list__title">Затрачено времени</dt>
+            <dd class="statistics-list__description">60 ДНЕЙ</dd>
+          </div>
+          <div class="statistics-list__item">
+            <dt class="statistics-list__title">Затраты на питание</dt> <!-- Не забыть двоеточие поставить через псевдоэлемент -->
+            <dd class="statistics-list__description">15 000 РУБ</dd> <!-- Не забыть точку поставить через псевдоэлемент -->
+          </div>
         </dl>
         <div class="slider">
           <div class="slider__items">
             <img class="slider__before" src="img/slider/before.png" width="311" height="232" alt="Кот Борис с большим избыточном весом перед тем, как начать диету основанной на корме Cat Energy Slim. Окрас кота серо белый, а глаза разноцветные (один зелёный, другой жёлтый).">
             <img class="slider__after" src="img/slider/after.png" width="251" height="240" alt="Тот же самый кот Борис, но теперь с очень стройной фигурой, которую он получил благодоря диете, основанной на корме Cat Energy Slim.">
           </div>
-          <div class="slider__toggle-wrapper">
+          <div class="slider__toggle-wrapper" hidden>
             <span class="slider__state">Было</span>
             <button class="slider__toggle-button" type="button"><span class="visually-hidden">Нажмите чтобы заметить различия</span></button> <!-- Сначала хотел через aria-label добавить. Передумал потому что если стили слетят, пользователь поймет что нажав кнопку можно будет слайд поменять -->
             <span class="slider__state">Стало</span>
           </div>
-          <div class="slider__range-wrapper visually-hidden"> <!-- Элемент добавлен, потому что на других вьюпортах вместо кнопки переключателя появляется ползунок -->
+          <div class="slider__range-wrapper" hidden> <!-- Элемент добавлен, потому что на других вьюпортах вместо кнопки переключателя появляется ползунок -->
             <span class="slider__state">Было</span>
               <div class="slider__range">
                 <div class="slider__range-bar">
