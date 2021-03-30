@@ -1,0 +1,30 @@
+.icon {
+  --icon-color: hsl(97deg 53% 47%);
+  --icon-phone: url("../img/stack.svg#phone");
+  --icon-email: url("../img/stack.svg#email");
+
+  display: inline-block;
+  vertical-align: baseline;
+  width: 80px;
+  height: 80px;
+}
+
+.icon:hover {
+  --icon-color: hsl(0deg 100% 75%);
+}
+
+.icon--type_use {
+  fill: var(--icon-color);
+}
+
+.icon--type_css {
+  background-color: var(--icon-color);
+}
+
+.icon--pic_phone {
+  mask: var(--icon-phone);
+}
+
+.icon--pic_email {
+  mask: var(--icon-email);
+}
