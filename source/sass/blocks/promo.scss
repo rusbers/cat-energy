@@ -1,0 +1,20 @@
+.promo{
+  --block-font-special: var(--oswald, "Tahoma", sans-serif);
+  --block-bg: rgba(var(--rgb-basic-green, 104,183,56), .85);
+}
+.promo__background{
+  background-image: linear-gradient(var(--block-bg), var(--block-bg)), url(../img/promo/promo-background-cat.jpg);
+  background-repeat: no-repeat;
+  min-height: 302px;
+}
+.promo__title{
+  margin: 0;
+}
+.promo__slogan{
+  font-family: var(--block-font-special);
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--basic-white, #fff);
+}

@@ -1,0 +1,25 @@
+.page{
+  --main-font-set: var(--oswald, "Tahoma", sans-serif);
+  font-family: var(--main-font-set);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--special-dark-grey, #444);
+}
+
+.page__body{
+  margin: 0;
+}
+.page__promo{
+  margin-bottom: 22px;
+}
+.page__benefits{
+  margin-bottom: 42px;
+}
+.page__product-categories{
+  margin-bottom: 27px;
+}
+.page__result-example{
+  padding-top: 27px;
+  padding-bottom: 25px;
+}

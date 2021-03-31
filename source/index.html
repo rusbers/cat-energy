@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин питания для котов «Cat Energy»</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -17,24 +18,26 @@
             <a>Главная</a>
           </li>
           <li class="main-navigation__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-navigation__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="main-navigation__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Интернет-магазин функционального питания для котов</h1>
-      <section class="promo">
+      <section class="page__promo promo">
         <h2 class="visually-hidden">Подобрать программу питания для котов</h2>
-        <p class="title title--color">Функциональное питание для котов</p>
-        <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        <div class="promo__background">
+          <p class="promo__title title title--color">Функциональное питание для котов</p>
+          <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        </div>
         <a class="promo__button button" href="form.html">Подобрать программу</a>
         <img class="promo__image" src="img/promo/promo-item.png" width="280" height="270" alt="Оранжевая консерва с кормом для котов из ассортимента Cat Energy Pro со вкусом курицы, без консервантов и с объемом в 500 грамм.">
       </section>
-      <section class="product-categories">
+      <section class="page__product-categories product-categories">
         <h2 class="visually-hidden">Посмотреть товары в зависимости от режима питания</h2>
         <ul class="product-categories__list">
           <li class="product-categories__item product-categories__item--weight_lose"> <!-- модификатор для добавления соотв. декор. картинки через pseudo element -->
@@ -49,8 +52,9 @@
           </li>
         </ul>
       </section>
-      <section class="benefits">
+      <section class="page__benefits benefits">
         <h2 class="visually-hidden">Преимущества функционального питания</h2>
+        <p class="benefits__title title title--line-height">Как это работает</p>
         <ul class="benefits__list">
           <li class="benefits__item">
             <p class="text">Функциональное питание содержит только полезные питательные вещества.</p>
@@ -66,9 +70,9 @@
           </li>
         </ul>
       </section>
-      <section class="result-example">
+      <section class="page__result-example result-example">
         <h2 class="visually-hidden">Эффект применения диеты построенной на наших продуктах</h2>
-        <p class="title">Живой пример</p>
+        <p class="result-example__title title title--line-height">Живой пример</p>
         <p class="text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <dl class="statistics-list">
           <div class="statistics-list__item">
@@ -80,8 +84,8 @@
             <dd class="statistics-list__description">60 ДНЕЙ</dd>
           </div>
           <div class="statistics-list__item">
-            <dt class="statistics-list__title">Затраты на питание</dt> <!-- Не забыть двоеточие поставить через псевдоэлемент -->
-            <dd class="statistics-list__description">15 000 РУБ</dd> <!-- Не забыть точку поставить через псевдоэлемент -->
+            <dt class="statistics-list__title statistics-list__title--font">Затраты на питание</dt> <!-- Не забыть двоеточие поставить через псевдоэлемент -->
+            <dd class="statistics-list__description statistics-list__description--font">15 000 РУБ</dd> <!-- Не забыть точку поставить через псевдоэлемент -->
           </div>
         </dl>
         <div class="slider">
