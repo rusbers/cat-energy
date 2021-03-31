@@ -1,0 +1,10 @@
+.slider{
+  --block-font-special: var(--oswald, "Tahoma", sans-serif);
+}
+.slider__state{
+  font-family: var(--block-font-special);
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--basic-black, #000);
+}
