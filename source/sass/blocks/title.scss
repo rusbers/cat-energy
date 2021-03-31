@@ -1,14 +1,16 @@
-.title{
+.title {
   --block-font-special: var(--oswald, "Tahoma", sans-serif);
   font-family: var(--block-font-special);
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  color: var(--basic-black, #000);
-  &--color{
-    color: var(--basic-white, #fff);
+  color: var(--basic-black, #000000);
+
+  &--color {
+    color: var(--basic-white, #ffffff);
   }
-  &--line-height{
+
+  &--line-height {
     line-height: 40px;
   }
 }
