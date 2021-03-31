@@ -1,15 +1,17 @@
-.page-footer{
-  --block-font-basic: var(--arial, sans-serif)
+.page-footer {
+  --block-font-basic: var(--arial, sans-serif);
 }
-.page-footer__copy{
+
+.page-footer__copy {
   font-family: var(--block-font-basic);
   font-size: 16px;
   line-height: 18.4px;
   font-weight: 400;
   text-decoration: none;
-  color: var(--special-dark-grey, #444);
+  color: var(--special-dark-grey, #444444);
 }
-.page-footer__bottom{
+
+.page-footer__bottom {
   background-color: var(--basic-grey, #f2f2f2);
   padding-top: 39px;
   padding-bottom: 22px;

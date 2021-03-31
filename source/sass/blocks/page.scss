@@ -1,25 +1,29 @@
-.page{
+.page {
   --main-font-set: var(--oswald, "Tahoma", sans-serif);
   font-family: var(--main-font-set);
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  color: var(--special-dark-grey, #444);
+  color: var(--special-dark-grey, #444444);
 }
 
-.page__body{
+.page__body {
   margin: 0;
 }
-.page__promo{
+
+.page__promo {
   margin-bottom: 22px;
 }
-.page__benefits{
+
+.page__benefits {
   margin-bottom: 42px;
 }
-.page__product-categories{
+
+.page__product-categories {
   margin-bottom: 27px;
 }
-.page__result-example{
+
+.page__result-example {
   padding-top: 27px;
   padding-bottom: 25px;
 }

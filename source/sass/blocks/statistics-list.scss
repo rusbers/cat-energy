@@ -1,28 +1,32 @@
-.statistics-list{
+.statistics-list {
   --block-font-special: var(--oswald, "Tahoma", sans-serif);
   --block-font-basic: var(--arial, sans-serif);
 }
-.statistics-list__title{
+
+.statistics-list__title {
   font-family: var(--block-font-basic);
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
-  color: var(--special-dark-grey, #444);
-  &--font{
+  color: var(--special-dark-grey, #444444);
+
+  &--font {
     font-family: var(--block-font-special);
     font-size: 14px;
     line-height: 20px;
-    color: var(--basic-black, #000);
+    color: var(--basic-black, #000000);
     text-transform: uppercase;
   }
 }
-.statistics-list__description{
+
+.statistics-list__description {
   font-family: var(--block-font-special);
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
-  color: var(--basic-black, #000);
-  &--font{
+  color: var(--basic-black, #000000);
+
+  &--font {
     font-size: 14px;
     line-height: 20px;
   }
