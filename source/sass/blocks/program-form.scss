@@ -47,7 +47,9 @@
   color: var(--special-dark-grey, #444444);
 
   &::placeholder {
+    font: inherit;
     color: inherit;
+    opacity: 1;
   }
 }
 
