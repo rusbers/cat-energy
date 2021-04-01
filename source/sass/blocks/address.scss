@@ -23,4 +23,8 @@
 .address__top-wrapper {
   padding-top: 28px;
   padding-bottom: 28px;
+
+  &--background {
+    background-color: var(--basic-grey, #f2f2f2);
+  }
 }
