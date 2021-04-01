@@ -1,0 +1,19 @@
+.page-main {
+  --block-font-special: var(--oswald, "Tahoma", sans-serif);
+}
+
+.page-main__title {
+  margin: 0;
+  margin-bottom: 37px;
+}
+
+.page-main__lead {
+  font-family: var(--block-font-special);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--basic-black, #000000);
+  margin: 0;
+  margin-bottom: 39px;
+}
