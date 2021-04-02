@@ -1,0 +1,12 @@
+.product-item {
+  --block-font-basic: var(--arial, sans-serif);
+  font-family: var(--block-font-basic);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--special-dark-grey, #444444);
+}
+
+.product-item__description-title {
+  font-weight: inherit;
+}

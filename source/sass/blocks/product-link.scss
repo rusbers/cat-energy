@@ -1,0 +1,16 @@
+.product-link {
+  --block-font-special: var(--oswald, "Tahoma", sans-serif);
+  text-decoration: none;
+}
+
+.product-link__title {
+  font-family: var(--block-font-special);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--special-dark-grey2, #222222);
+
+  &--line-height {
+    line-height: 16px;
+  }
+}

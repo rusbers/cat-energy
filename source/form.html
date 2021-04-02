@@ -28,9 +28,9 @@
       </ul>
     </nav>
   </header>
-  <main class="page-main page-form">
-    <h1 class="page-main__title title">Подбор программы</h1>
-    <p class="page-main__lead">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+  <main class="page-form">
+    <h1 class="page-form__title title">Подбор программы</h1>
+    <p class="page-form__lead">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form class="page-form__program-form program-form" action="https://echo.htmlacademy.ru" method="POST">
       <fieldset class="program-form__fieldset">
         <legend class="visually-hidden">Данные кота</legend>
@@ -59,19 +59,19 @@
         </ul>
       </fieldset>
       <fieldset class="program-form__fieldset">
-        <legend class="program-form__title">Контактные данные (владельца кота)</legend>
+        <legend class="title-legend title-legend--line-height">Контактные данные (владельца кота)</legend>
         <label class="program-form__label" for="email">E-mail:*</label>
         <input class="program-form__field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
         <label class="program-form__label" for="phone-number">Телефон:*</label>
         <input class="program-form__field" type="tel" id="phone-number" name="phone-number" placeholder="8 (960) 900-60-90">
       </fieldset>
       <fieldset class="program-form__fieldset">
-        <legend class="program-form__title">Комментарий</legend>
+        <legend class="title-legend title-legend--line-height">Комментарий</legend>
         <label class="visually-hidden" for="comment-field">Написать комментарий</label>
         <textarea class="comment program-form__field" name="comment-field" id="comment-field" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="program-form__fieldset">
-        <legend class="program-form__title">Дополнительно</legend>
+        <legend class="title-legend title-legend--line-height">Дополнительно</legend>
         <ul class="program-form__checkbox-options-list checkbox-options-list">
           <li class="checkbox-options-list__item">
             <input class="visually-hidden checkbox-options-list__checkbox" type="checkbox" id="sweetener" name="optional-add" value="sweetener" checked>
