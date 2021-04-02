@@ -1,0 +1,20 @@
+.gift-promo {
+  --block-font-basic: var(--arial, sans-serif);
+  padding-top: 39px;
+  padding-bottom: 35px;
+}
+
+.gift-promo__inner {
+  background-image: url("../../img/gift-promo/gift-photo.png");
+  background-repeat: no-repeat;
+  min-height: 289px;
+}
+
+.gift-promo__text {
+  font-family: var(--block-font-basic);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--basic-white, #ffffff);
+  margin: 0;
+}

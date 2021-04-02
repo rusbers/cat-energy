@@ -1,3 +1,23 @@
+.page-form {
+  --block-font-special: var(--oswald, "Tahoma", sans-serif);
+}
+
+.page-form__title {
+  margin: 0;
+  margin-bottom: 37px;
+}
+
+.page-form__lead {
+  font-family: var(--block-font-special);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--basic-black, #000000);
+  margin: 0;
+  margin-bottom: 39px;
+}
+
 .page-form__program-form {
   padding-bottom: 32px;
 }

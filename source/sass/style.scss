@@ -8,7 +8,6 @@
 // === BLOCKS ===
 @import "./blocks/visually-hidden.scss";
 @import "./blocks/page.scss";
-@import "./blocks/page-main.scss";
 @import "./blocks/button.scss";
 @import "./blocks/title.scss";
 @import "./blocks/text.scss";
@@ -24,9 +23,17 @@
 @import "./blocks/form-body.scss";
 @import "./blocks/page-form.scss";
 @import "./blocks/program-form.scss";
+@import "./blocks/title-legend.scss";
 @import "./blocks/radio-options-list.scss";
 @import "./blocks/checkbox-options-list.scss";
 @import "./blocks/submit-button.scss";
+@import "./blocks/page-catalog.scss";
+@import "./blocks/products-list.scss";
+@import "./blocks/product-item.scss";
+@import "./blocks/product-link.scss";
+@import "./blocks/additional-products-list.scss";
+@import "./blocks/additional-product.scss";
+@import "./blocks/gift-promo.scss";
 
 // === END BLOCKS ===
 
