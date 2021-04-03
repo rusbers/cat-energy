@@ -1,4 +1,4 @@
-.product-item {
+.product-description {
   --block-font-basic: var(--arial, sans-serif);
   font-family: var(--block-font-basic);
   font-size: 12px;
@@ -7,6 +7,6 @@
   color: var(--special-dark-grey, #444444);
 }
 
-.product-item__description-title {
-  font-weight: inherit;
+.product-description__title {
+  font: inherit;
 }
