@@ -1,6 +1,32 @@
 .statistics-list {
   --block-font-special: var(--oswald, "Tahoma", sans-serif);
   --block-font-basic: var(--arial, sans-serif);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr;
+  }
+
+  @media (min-width: 1440px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.statistics-list__item--aspect {
+  grid-row: 2/3;
+
+  @media (min-width: 768px) {
+    grid-row: initial;
+    justify-self: end;
+  }
+
+  @media (min-width: 1440px) {
+    justify-self: start;
+  }
 }
 
 .statistics-list__title {

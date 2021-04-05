@@ -8,6 +8,10 @@
 
   &--color {
     color: var(--basic-white, #ffffff);
+
+    @media (min-width: 768px) {
+      color: var(--basic-black, #000000);
+    }
   }
 
   &--line-height {
