@@ -11,8 +11,20 @@
   margin: 0;
 }
 
-.page__promo {
-  margin-bottom: 22px;
+.page__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: 768px) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1220px;
+    padding: 0 110px;
+  }
 }
 
 .page__benefits {
@@ -24,6 +36,18 @@
 }
 
 .page__result-example {
-  padding-top: 27px;
-  padding-bottom: 25px;
+  position: relative;
+}
+
+.page__promo {
+  position: relative;
+  margin-bottom: 22px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 82px;
+  }
 }

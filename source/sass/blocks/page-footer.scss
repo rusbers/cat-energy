@@ -16,3 +16,10 @@
   padding-top: 39px;
   padding-bottom: 22px;
 }
+
+.page-footer__inner {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

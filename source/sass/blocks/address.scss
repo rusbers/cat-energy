@@ -1,6 +1,10 @@
 .address {
   --block-font-special: var(--oswald, "Tahoma", sans-serif);
   --block-font-basic: var(--arial, sans-serif);
+
+  @media (min-width: 1440px) {
+    position: relative;
+  }
 }
 
 .address__slogan {
@@ -27,4 +31,10 @@
   &--background {
     background-color: var(--basic-grey, #f2f2f2);
   }
+
+  @media (min-width: 1440px) {
+    position: absolute;
+    background-color: var(--basic-white, #ffffff);
+  }
 }
+
