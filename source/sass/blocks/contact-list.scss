@@ -1,0 +1,15 @@
+.contact-list {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+  @media (min-width: 1440px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 80px;
+  }
+}
+
+.contact-list__item {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+}
