@@ -1,0 +1,9 @@
+.client-data-list {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.client-data-list__item {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+}

@@ -1,11 +1,12 @@
 .button {
   --block-font-special: var(--oswald, "Tahoma", sans-serif);
   font-family: var(--block-font-special);
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   color: var(--basic-white, #ffffff);
+  border: none;
   text-decoration: none;
   background-color: var(--basic-green, #68b738);
 }

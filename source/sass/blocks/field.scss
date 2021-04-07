@@ -1,0 +1,19 @@
+.field {
+  font-family: var(--block-font-special);
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--special-dark-grey, #444444);
+  border: 1px solid var(--special-grey, #e7e7e7);
+
+  &::placeholder {
+    font: inherit;
+    color: inherit;
+    opacity: 1;
+  }
+
+  &--border_color {
+    border-color: var(--special-dark-grey3, #cdcdcd);
+  }
+}
