@@ -1,0 +1,32 @@
+.more-items {
+  display: grid;
+  grid-template-rows: 1fr max-content max-content max-content;
+
+  @media (min-width: 768px) {
+    border: 2px solid var(--basic-grey, #f2f2f2);
+  }
+}
+
+.more-items__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--special-dark-grey4, #111111);
+  text-transform: uppercase;
+  grid-row: 2/3;
+  justify-self: center;
+}
+
+.more-items__lead {
+  grid-row: 3/4;
+  justify-self: center;
+}
+
+.more-items__icon {
+  grid-row: 1/2;
+  justify-self: center;
+}
+
+.more-items__button {
+  grid-row: 4/5;
+}

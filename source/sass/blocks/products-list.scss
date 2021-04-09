@@ -1,5 +1,23 @@
 .products-list {
   list-style: none;
-  margin: 0;
   padding: 0;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.products-list__item {
+  margin-bottom: 25px;
+  margin-right: 60px;
+
+  @media (min-width: 768px) {
+    width: 324px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 245px;
+    margin-right: 80px;
+  }
 }

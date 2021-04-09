@@ -1,6 +1,7 @@
 .product-link {
   --block-font-special: var(--oswald, "Tahoma", sans-serif);
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .product-link__title {

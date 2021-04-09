@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
-  <header class="page-header">
+  <header class="page__wrapper page-header">
     <a class="page-header__logo logo">
       <img class="logo__mascot" src="img/header/logo-mascot.svg" width="34" height="38" alt="Логотип">
       <img class="logo__text" src="img/header/logo-text.svg" width="101" height="18" alt="Название магазина в виде логотипа — «Cat Energy»">
@@ -27,14 +27,14 @@
       </ul>
     </nav>
   </header>
-  <main class="page-main">
+  <main class="page__wrapper page-main">
     <h1 class="page-main__title page-main__title--margin_bottom title">Каталог продукции</h1>
     <section class="page-main__main-products main-products">
       <h2 class="visually-hidden">Список товаров</h2>
-      <ul class="products-list">
+      <ul class="main-products__products-list products-list">
         <li class="products-list__item">
           <article class="product">
-            <a class="product-link" href="#">
+            <a class="product__product-link product-link" href="#">
               <h3 class="product-link__title">Cat Energy PRO 500 г</h3>
             </a>
             <table class="product-description">
@@ -54,12 +54,12 @@
             <a class="product__picture" href="#">
               <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="lorem">
             </a>
-            <a class="button" href="form.html">Заказать</a>
+            <a class="product__button button" href="form.html">Заказать</a>
           </article>
         </li>
         <li class="products-list__item">
           <article class="product">
-            <a class="product-link" href="#">
+            <a class="product__product-link product-link" href="#">
               <h3 class="product-link__title">Cat Energy PRO 1000 г</h3>
             </a>
             <table class="product-description">
@@ -79,12 +79,12 @@
             <a class="product__picture" href="#">
               <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="lorem">
             </a>
-            <a class="button" href="form.html">Заказать</a>
+            <a class="product__button button" href="form.html">Заказать</a>
           </article>
         </li>
         <li class="products-list__item">
           <article class="product">
-            <a class="product-link" href="#">
+            <a class="product__product-link product-link" href="#">
               <h3 class="product-link__title">Cat Energy PRO 500 г</h3>
             </a>
             <table class="product-description">
@@ -104,12 +104,12 @@
             <a class="product__picture" href="#">
               <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="lorem">
             </a>
-            <a class="button" href="form.html">Заказать</a>
+            <a class="product__button button" href="form.html">Заказать</a>
           </article>
         </li>
         <li class="products-list__item">
           <article class="product">
-            <a class="product-link" href="#">
+            <a class="product__product-link product-link" href="#">
               <h3 class="product-link__title">Cat Energy PRO 1000 г</h3>
             </a>
             <table class="product-description">
@@ -129,11 +129,12 @@
             <a class="product__picture" href="#">
               <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="lorem">
             </a>
+            <a class="product__button button" href="form.html">Заказать</a>
           </article>
         </li>
         <li class="products-list__item">
           <article class="product">
-            <a class="product-link" href="#">
+            <a class="product__product-link product-link" href="#">
               <h3 class="product-link__title">Cat Energy slim 500 г</h3>
             </a>
             <table class="product-description">
@@ -153,12 +154,12 @@
             <a class="product__picture" href="#">
               <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="lorem">
             </a>
-            <a class="button" href="form.html">Заказать</a>
+            <a class="product__button button" href="form.html">Заказать</a>
           </article>
         </li>
         <li class="products-list__item">
           <article class="product">
-            <a class="product-link" href="#">
+            <a class="product__product-link product-link" href="#">
               <h3 class="product-link__title">Cat Energy slim 1000 г</h3>
             </a>
             <table class="product-description">
@@ -178,12 +179,12 @@
             <a class="product__picture" href="#">
               <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="lorem">
             </a>
-            <a class="button" href="form.html">Заказать</a>
+            <a class="product__button button" href="form.html">Заказать</a>
           </article>
         </li>
         <li class="products-list__item">
           <article class="product">
-            <a class="product-link" href="#">
+            <a class="product__product-link product-link" href="#">
               <h3 class="product-link__title">Cat Energy slim 500 г</h3>
             </a>
             <table class="product-description">
@@ -203,81 +204,85 @@
             <a class="product__picture" href="#">
               <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="lorem">
             </a>
-            <a class="button" href="form.html">Заказать</a>
+            <a class="product__button button" href="form.html">Заказать</a>
           </article>
         </li>
-        <li class="products-list__item more-items">
-          <h3 class="more-items__title">Показать еще 100500 товаров</h3>
-          <p class="more-items__lead">На самом деле вкусов гораздо больше!</p>
-          <img src="https://via.placeholder.com/60x60" width="60" height="60" alt="lorem"> <!-- Тут будет иконка с плюсом -->
-          <a class="button button--color" href="#">Показать все</a>
+        <li class="products-list__item">
+          <div class="more-items">
+            <h3 class="more-items__title">Показать еще 100500 товаров</h3>
+            <p class="more-items__lead">На самом деле вкусов гораздо больше!</p>
+            <img class="more-items__icon" src="https://via.placeholder.com/60x60" width="60" height="60" alt="lorem"> <!-- Тут будет иконка с плюсом -->
+            <a class="more-items__button button button--color" href="#">Показать все</a>
+          </div>
         </li>
       </ul>
     </section>
-    <section class="additional-products">
+    <section class="page__additional-products additional-products">
       <h2 class="title-legend">Дополнительные товары</h2>
-      <ul class="additional-products__additional-products-list additional-products-list">
-        <li class="additional-products-list__item">
-          <article class="additional-product">
-            <a class="product-link" href="#">
-              <h3 class="product-link__title product-link__title--line-height">Сахарозаменитель</h3>
-            </a>
-            <dl class="additional-product__details">
-              <dt class="additional-product__quantity">1 упаковка (100 г)</dt>
-              <dd class="additional-product__price">200 Р.</dd>
-            </dl>
-            <a class="button" href="form.html">Заказать</a>
-          </article>
-        </li>
-        <li class="additional-products-list__item">
-          <article class="additional-product">
-            <a class="product-link" href="#">
-              <h3 class="product-link__title product-link__title--line-height">Питьевая вода</h3>
-            </a>
-            <dl class="additional-product__details">
-              <dt class="additional-product__quantity">5 литров</dt>
-              <dd class="additional-product__price">50 Р.</dd>
-            </dl>
-            <a class="button" href="form.html">Заказать</a>
-          </article>
-        </li>
-        <li class="additional-products-list__item">
-          <article class="additional-product">
-            <a class="product-link" href="#">
-              <h3 class="product-link__title product-link__title--line-height">Молоко</h3>
-            </a>
-            <dl class="additional-product__details">
-              <dt class="additional-product__quantity">1 литр</dt>
-              <dd class="additional-product__price">100 Р.</dd>
-            </dl>
-            <a class="button" href="form.html">Заказать</a>
-          </article>
-        </li>
-        <li class="additional-products-list__item">
-          <article class="additional-product">
-            <a class="product-link" href="#">
-              <h3 class="product-link__title product-link__title--line-height">Витамины</h3>
-            </a>
-            <dl class="additional-product__details">
-              <dt class="additional-product__quantity">1 упаковка (30 г)</dt>
-              <dd class="additional-product__price">300 Р.</dd>
-            </dl>
-            <a class="button" href="form.html">Заказать</a>
-          </article>
-        </li>
-      </ul>
-      <section class="gift-promo">
-        <div class="gift-promo__inner">
-          <h3 class="visually-hidden">Как получить подарок</h3>
-          <p class="gift-promo__text">Закажите все и получите чехол для кота в подарок!</p>
-        </div>
-      </section>
+      <div class="additional-products__inner">
+        <ul class="additional-products__additional-products-list additional-products-list">
+          <li class="additional-products-list__item">
+            <article class="additional-product">
+              <a class="additional-product__product-link product-link" href="#">
+                <h3 class="product-link__title product-link__title--line-height">Сахарозаменитель</h3>
+              </a>
+              <dl class="additional-product__details">
+                <dt class="additional-product__quantity">1 упаковка (100 г)</dt>
+                <dd class="additional-product__price">200 Р.</dd>
+              </dl>
+              <a class="additional-product__button button" href="form.html">Заказать</a>
+            </article>
+          </li>
+          <li class="additional-products-list__item">
+            <article class="additional-product">
+              <a class="additional-product__product-link product-link" href="#">
+                <h3 class="product-link__title product-link__title--line-height">Питьевая вода</h3>
+              </a>
+              <dl class="additional-product__details">
+                <dt class="additional-product__quantity">5 литров</dt>
+                <dd class="additional-product__price">50 Р.</dd>
+              </dl>
+              <a class="additional-product__button button" href="form.html">Заказать</a>
+            </article>
+          </li>
+          <li class="additional-products-list__item">
+            <article class="additional-product">
+              <a class="additional-product__product-link product-link" href="#">
+                <h3 class="product-link__title product-link__title--line-height">Молоко</h3>
+              </a>
+              <dl class="additional-product__details">
+                <dt class="additional-product__quantity">1 литр</dt>
+                <dd class="additional-product__price">100 Р.</dd>
+              </dl>
+              <a class="additional-product__button button" href="form.html">Заказать</a>
+            </article>
+          </li>
+          <li class="additional-products-list__item">
+            <article class="additional-product">
+              <a class="additional-product__product-link product-link" href="#">
+                <h3 class="product-link__title product-link__title--line-height">Витамины</h3>
+              </a>
+              <dl class="additional-product__details">
+                <dt class="additional-product__quantity">1 упаковка (30 г)</dt>
+                <dd class="additional-product__price">300 Р.</dd>
+              </dl>
+              <a class="additional-product__button button" href="form.html">Заказать</a>
+            </article>
+          </li>
+        </ul>
+        <section class="gift-promo">
+          <div class="gift-promo__inner">
+            <h3 class="visually-hidden">Как получить подарок</h3>
+            <p class="gift-promo__text">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
+        </section>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
     <section class="address">
       <h2 class="visually-hidden">Как нас найти</h2>
-      <div class="address__top-wrapper address__top-wrapper--background">
+      <div class="page__wrapper address__top-wrapper address__top-wrapper--background">
         <p class="address__slogan">приглашаем к сотрудничеству дилеров!</p>
         <p class="address__place">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
@@ -286,25 +291,27 @@
       </div>
     </section>
     <div class="page-footer__bottom">
-      <img class="page-footer__logo" src="img/footer/footer-logo.svg" width="128" height="24" alt="Название магазина в виде логотипа — «Cat Energy»">
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--vkontakte" href="#">
-            <span class="visually-hidden">Перейти на нашу страницу в Вконтакте</span>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--instagram" href="#">
-            <span class="visually-hidden">Перейти на нашу страницу в Инстаграме</span>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--facebook" href="#">
-            <span class="visually-hidden">Перейти на нашу страницу в Фейсбуке</span>
-          </a>
-        </li>
-      </ul>
-      <a class="page-footer__copy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="page__wrapper page-footer__inner">
+        <img class="page-footer__logo" src="img/footer/footer-logo.svg" width="128" height="24" alt="Название магазина в виде логотипа — «Cat Energy»">
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--vkontakte" href="#">
+              <span class="visually-hidden">Перейти на нашу страницу в Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--instagram" href="#">
+              <span class="visually-hidden">Перейти на нашу страницу в Инстаграме</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--facebook" href="#">
+              <span class="visually-hidden">Перейти на нашу страницу в Фейсбуке</span>
+            </a>
+          </li>
+        </ul>
+        <a class="page-footer__copy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
     </div>
   </footer>
 </body>
