@@ -2,12 +2,26 @@
   --block-font-basic: var(--arial, sans-serif);
   padding-top: 39px;
   padding-bottom: 35px;
+
+  @media (min-width: 1440px) {
+    padding: 0;
+  }
 }
 
 .gift-promo__inner {
   background-image: url("../../img/gift-promo/gift-photo.png");
   background-repeat: no-repeat;
+  background-size: 100%;
   min-height: 289px;
+
+  @media (min-width: 768px) {
+    min-height: 200px;
+  }
+
+  @media (min-width: 1440px) {
+    min-height: 245px;
+    background-size: auto;
+  }
 }
 
 .gift-promo__text {
@@ -16,5 +30,20 @@
   line-height: 20px;
   font-weight: 400;
   color: var(--basic-white, #ffffff);
-  margin: 0;
+  margin: 0 auto;
+  padding-top: 168px;
+  width: 161px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    padding: 71px 0 69px 423px;
+    text-align: left;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 145px 0 0 0;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
