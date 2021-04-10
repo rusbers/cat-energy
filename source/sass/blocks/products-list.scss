@@ -1,23 +1,30 @@
 .products-list {
   list-style: none;
   padding: 0;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  row-gap: 25px;
 
   @media (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media (min-width: 1440px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 60px;
   }
 }
 
 .products-list__item {
-  margin-bottom: 25px;
-  margin-right: 60px;
-
   @media (min-width: 768px) {
     width: 324px;
   }
 
   @media (min-width: 1440px) {
     width: 245px;
-    margin-right: 80px;
   }
 }
