@@ -1,0 +1,15 @@
+.logo {
+  display: block;
+  padding-top: 11px;
+  padding-bottom: 14px;
+}
+
+.logo__text {
+  position: absolute;
+  left: calc(50% - 50px);
+  top: 24px;
+
+  @media (min-width: 768px) {
+    position: static;
+  }
+}
