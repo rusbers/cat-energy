@@ -2,7 +2,12 @@
   --block-font-basic: var(--arial, sans-serif);
   font-family: var(--block-font-basic);
   font-size: 14px;
-  line-height: 18px;
+  line-height: calc(18 / 14);
   font-weight: 400;
   color: var(--special-dark-grey, #444444);
+
+  @media (min-width: 768px) {
+    font-size: 16;
+    line-height: calc(24 / 16);
+  }
 }

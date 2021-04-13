@@ -1,5 +1,5 @@
 .icon {
-  --icon-color: hsl(97deg 53% 47%);
+  --icon-color: hsl(97deg 53% 47%); /* первоначальный  */
   --icon-phone: url("../../img/stack.svg#phone");
   --icon-email: url("../../img/stack.svg#email");
 
@@ -10,12 +10,12 @@
 }
 
 .icon:hover {
-  --icon-color: hsl(0deg 100% 75%);
+  --icon-color: hsl(0deg 100% 75%); /* кораловый цвет при ховере */
 }
 
-.icon--type_use {
-  fill: var(--icon-color);
-}
+// .icon--type_use {
+//   fill: var(--icon-color);
+// }
 
 .icon--type_css {
   background-color: var(--icon-color);

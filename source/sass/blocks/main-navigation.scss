@@ -1,31 +1,119 @@
 .main-navigation {
   --block-font-special: var(--oswald, "Tahoma", sans-serif);
+  flex-grow: 1;
 }
 
 .main-navigation__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  text-align: center;
 
   @media (min-width: 768px) {
-    width: 440px;
     display: flex;
-  }
-
-  @media (min-width: 1440px) {
-    width: 478px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
   }
 }
 
 .main-navigation__item {
   font-family: var(--block-font-special);
   font-size: 20px;
-  line-height: 20px;
+  line-height: 1;
   font-weight: 500;
   text-transform: uppercase;
+  padding-top: 22px;
+  padding-bottom: 23px;
+  border-top: 1px solid var(--special-grey2, #e6e6e6);
+  margin-left: -20px;
+  margin-right: -20px;
+
+  &--border_bottom {
+    border-bottom: 1px solid var(--special-grey2, #e6e6e6);
+  }
+
+  @media (min-width: 768px) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    border: none;
+    padding-bottom: 8px;
+    margin: 0;
+    margin-right: 34px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--margin_right {
+      margin-right: 36px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &--current {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        background: var(--basic-green, #68b738);
+      }
+    }
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 20px;
+    line-height: normal;
+
+    &--current {
+      &::after {
+        background-color: var(--basic-white, #ffffff);
+      }
+    }
+  }
 }
 
 .main-navigation__link {
   text-decoration: none;
   color: var(--basic-black, #000000);
+
+  @media (min-width: 1440px) {
+    color: var(--basic-white, #ffffff);
+  }
+}
+
+.main-navigation__toggle {
+  position: absolute;
+  border: 0;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+
+  &--open {
+    background-image: url("../../img/stack.svg#close-menu");
+    top: 21px;
+    right: 20px;
+  }
+
+  &--close {
+    background-image: url("../../img/stack.svg#burger-menu");
+    top: 22px;
+    right: 21px;
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
