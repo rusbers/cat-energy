@@ -4,14 +4,25 @@
   margin: 0;
 
   @media (min-width: 768px) {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 37%);
+    grid-template-rows: 1fr 1fr;
+    // justify-content: space-between;
+    column-gap: 122px;
+    row-gap: 37px;
+  }
+
+  @media (min-width: 1440px) {
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: 1fr;
     justify-content: space-between;
-    flex-wrap: wrap;
+    gap: initial;
   }
 }
 
 .benefits__item {
-  margin-bottom: 20px;
+  --block-font-special: var(--oswald, "Tahoma", sans-serif);
+  margin-bottom: 17px;
 
   &:last-child {
     margin-bottom: 0;
@@ -19,9 +30,89 @@
 
   @media (min-width: 768px) {
     margin: 0;
+    padding-top: 40px;
+    padding-bottom: 57px;
+    position: relative;
+
+    &--has_digit::before {
+      content: "1";
+      position: absolute;
+      font-family: var(--block-font-special);
+      font-size: 280px;
+      line-height: 1;
+      color: var(--basic-grey);
+      top: 0;
+      right: 34px;
+      z-index: -4;
+    }
+
+    &--number_2::before {
+      content: "2";
+      right: 17px;
+    }
+
+    &--number_3::before {
+      content: "3";
+      right: 13px;
+    }
+
+    &--number_4::before {
+      content: "4";
+      right: 14px;
+    }
   }
 }
 
 .benefits__title {
   margin: 0;
+  margin-bottom: 38px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 29px;
+  }
+}
+
+.benefits__text {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+
+  @media (min-width: 768px) {
+    flex-direction: column;
+    align-items: initial;
+  }
+
+  &--has_icon {
+    --icon-a: url("../../img/stack.svg#benef-ico-1");
+    --icon-b: url("../../img/stack.svg#benef-ico-2");
+    --icon-c: url("../../img/stack.svg#benef-ico-3");
+    --icon-d: url("../../img/stack.svg#benef-ico-4");
+  }
+
+  &--has_icon::before {
+    content: "";
+    min-width: 60px;
+    min-height: 60px;
+    margin-right: 20px;
+    background-image: var(--icon-a);
+    background-repeat: no-repeat;
+
+    @media (min-width: 768px) {
+      min-width: 80px;
+      min-height: 80px;
+      margin-bottom: 31px;
+    }
+  }
+
+  &--icon_b::before {
+    background-image: var(--icon-b);
+  }
+
+  &--icon_c::before {
+    background-image: var(--icon-c);
+  }
+
+  &--icon_d::before {
+    background-image: var(--icon-d);
+  }
 }

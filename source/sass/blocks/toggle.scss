@@ -1,0 +1,42 @@
+.toggle {
+  --block-font-special: var(--oswald, "Tahoma", sans-serif);
+
+  @media (min-width: 767.5px) {
+    display: none;
+  }
+}
+
+.toggle__button {
+  display: inline-block;
+  font-family: var(--block-font-special);
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--basic-black, #000000);
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.toggle__state {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 84px;
+  height: 14px;
+  border: 1px solid var(--special-dark-grey3, #cdcdcd);
+  border-radius: 6px;
+  background-color: var(--basic-white, #ffffff);
+  padding: 3px 6px;
+  margin: 0 12px;
+}
+
+.toggle__switch {
+  background-color: var(--basic-green, #68b738);
+  width: 50%;
+  height: 100%;
+  border-radius: 6px;
+
+  &--after {
+    margin-left: 50%;
+  }
+}

@@ -3,18 +3,24 @@
 
   @media (min-width: 768px) {
     display: flex;
-    padding-top: 23px;
+    padding-top: 43px;
   }
 
   @media (min-width: 1440px) {
-    padding-top: 53px;
+    padding-top: 69px;
   }
 }
 
 .page-header__logo {
   margin-right: 50px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
 }
 
 .page-header__inner {
-  margin-bottom: 32px;
+  @media (min-width: 1440px) {
+    margin-bottom: 32px;
+  }
 }
