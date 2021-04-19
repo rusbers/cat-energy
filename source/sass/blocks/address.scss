@@ -14,26 +14,71 @@
   font-weight: 400;
   color: var(--basic-black, #000000);
   text-transform: uppercase;
+  padding-right: 15px;
+  margin: 0;
+  width: min-content;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: calc(21 / 20);
+  }
+
+  @media (min-width: 1440px) {
+    padding-right: 87px;
+  }
 }
 
 .address__place {
   font-family: var(--block-font-basic);
   font-size: 14px;
-  line-height: 20px;
+  line-height: calc(20 / 14);
   font-weight: 400;
   color: var(--special-dark-grey, #444444);
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    text-align: right;
+  }
+}
+
+.address__place-street {
+  display: inline-block;
+  width: min-content;
+  margin: 0;
+
+  @media (min-width: 768px) {
+    margin-bottom: 19px;
+  }
+}
+
+.address__place-city {
+  margin: 0;
 }
 
 .address__top-wrapper {
   padding-top: 28px;
   padding-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
 
   &--background {
     background-color: var(--basic-grey, #f2f2f2);
   }
 
+  @media (min-width: 768px) {
+    padding: 66px 70px 56px 70px;
+  }
+
   @media (min-width: 1440px) {
     position: absolute;
     background-color: var(--basic-white, #ffffff);
+    width: auto;
+    padding-top: 66px;
+    padding-bottom: 51px;
+    padding-left: 76px;
+    padding-right: 89px;
+    margin-left: 110px;
+    top: 95px;
   }
 }

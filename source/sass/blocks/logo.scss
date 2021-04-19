@@ -2,6 +2,10 @@
   display: block;
   padding-top: 11px;
   padding-bottom: 14px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
 }
 
 .logo__text {

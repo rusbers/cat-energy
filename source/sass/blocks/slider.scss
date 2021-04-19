@@ -1,11 +1,28 @@
-.slider {
-  --block-font-special: var(--oswald, "Tahoma", sans-serif);
+.slider__before {
+  max-width: 100%;
+  // height: auto;
+  height: 230px; /* Временно добавил для PP */
+
+  @media (min-width: 768px) {
+    height: 503px;
+    width: 678px;
+  }
 }
 
-.slider__state {
-  font-family: var(--block-font-special);
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: var(--basic-black, #000000);
+.slider__after {
+  max-width: 100%;
+  height: auto;
+}
+
+.slider__items {
+  margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: 1440px) {
+    align-self: flex-end;
+    margin-bottom: 19px;
+  }
 }

@@ -23,8 +23,10 @@
 
 .icon--pic_phone {
   mask: var(--icon-phone);
+  mask-repeat: no-repeat;
 }
 
 .icon--pic_email {
   mask: var(--icon-email);
+  mask-repeat: no-repeat;
 }
