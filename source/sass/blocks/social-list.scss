@@ -1,7 +1,7 @@
 .social-list {
-  --ico-vk: url("../../img/stack.svg#vkontakte");
-  --ico-fb: url("../../img/stack.svg#facebook");
-  --ico-insta: url("../../img/stack.svg#instagram");
+  // --ico-vk: url("../../img/stack.svg#vkontakte");
+  // --ico-fb: url("../../img/stack.svg#facebook");
+  // --ico-insta: url("../../img/stack.svg#instagram");
   list-style: none;
   display: flex;
   justify-content: center;
@@ -26,7 +26,7 @@
   content: "";
   display: inline-block;
   background-color: var(--icon-grey, #666666);
-  mask-image: var(--ico-vk);
+  mask-image: url("../../img/stack.svg#vkontakte");
   mask-repeat: no-repeat;
   width: 25px;
   height: 30px;
@@ -39,11 +39,11 @@
 
 .social-list__link {
   &--instagram::after {
-    mask-image: var(--ico-insta);
+    mask-image: url("../../img/stack.svg#instagram");
   }
 
   &--facebook::after {
-    mask-image: var(--ico-fb);
+    mask-image: url("../../img/stack.svg#facebook");
   }
 
   &:hover::after {

@@ -37,8 +37,8 @@
   }
 
   &--has_icon {
-    --icon-a: url("../../img/stack.svg#cat-slim");
-    --icon-b: url("../../img/stack.svg#cat-pro");
+    // --icon-a: url("../../img/stack.svg#cat-slim"); /* Убрал чтобы сработало на iOS */
+    // --icon-b: url("../../img/stack.svg#cat-pro");
 
     &::before {
       content: "";
@@ -48,7 +48,7 @@
       margin-top: -7px;
       width: 70px;
       height: 70px;
-      background-image: var(--icon-a);
+      background-image: url("../../img/stack.svg#cat-slim");
 
       @media (min-width: 768px) {
         width: 280px;
@@ -71,11 +71,11 @@
   }
 
   &--icon_a::before {
-    background-image: var(--icon-a);
+    background-image: url("../../img/stack.svg#cat-slim");
   }
 
   &--icon_b::before {
-    background-image: var(--icon-b);
+    background-image: url("../../img/stack.svg#cat-pro");
 
     @media (min-width: 768px) {
       margin-left: 10px;

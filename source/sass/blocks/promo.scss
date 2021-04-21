@@ -1,11 +1,11 @@
 .promo {
   --block-font-special: var(--oswald, "Tahoma", sans-serif);
-  --block-bg: rgba(var(--rgb-basic-green, 104, 183, 56), 0.85);
+  // --block-bg: rgba(var(--rgb-basic-green, 104, 183, 56), 0.85); /* Убрал кастомное свойство, чтобы градиент сработал на iOS */
 
   &--has_background {
     &::before {
       content: "";
-      background-image: linear-gradient(var(--block-bg), var(--block-bg)), url("../../img/promo/promo-background-cat.jpg");
+      background-image: linear-gradient(rgba(var(--rgb-basic-green, 104, 183, 56), 0.85), rgba(var(--rgb-basic-green, 104, 183, 56), 0.85)), url("../../img/promo/promo-background-cat.jpg");
       width: 100%;
       height: 304px;
       background-repeat: no-repeat;
