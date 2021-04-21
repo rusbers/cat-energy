@@ -82,19 +82,19 @@
     align-items: initial;
   }
 
-  &--has_icon {
-    --icon-a: url("../../img/stack.svg#benef-ico-1");
-    --icon-b: url("../../img/stack.svg#benef-ico-2");
-    --icon-c: url("../../img/stack.svg#benef-ico-3");
-    --icon-d: url("../../img/stack.svg#benef-ico-4");
-  }
+  // &--has_icon {
+  //   --icon-a: url("../../img/stack.svg#benef-ico-1");
+  //   --icon-b: url("../../img/stack.svg#benef-ico-2");
+  //   --icon-c: url("../../img/stack.svg#benef-ico-3");
+  //   --icon-d: url("../../img/stack.svg#benef-ico-4");
+  // }
 
   &--has_icon::before {
     content: "";
     min-width: 60px;
     min-height: 60px;
     margin-right: 20px;
-    background-image: var(--icon-a);
+    background-image: url("../../img/stack.svg#benef-ico-1");
     background-repeat: no-repeat;
 
     @media (min-width: 768px) {
@@ -105,14 +105,14 @@
   }
 
   &--icon_b::before {
-    background-image: var(--icon-b);
+    background-image: url("../../img/stack.svg#benef-ico-2");
   }
 
   &--icon_c::before {
-    background-image: var(--icon-c);
+    background-image: url("../../img/stack.svg#benef-ico-3");
   }
 
   &--icon_d::before {
-    background-image: var(--icon-d);
+    background-image: url("../../img/stack.svg#benef-ico-4");
   }
 }
