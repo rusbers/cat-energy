@@ -6,6 +6,15 @@
   text-transform: uppercase;
   color: var(--special-dark-grey, #444444);
   border: 1px solid var(--special-grey, #e7e7e7);
+  padding: 13px 5px 13px 13px;
+  outline: 0;
+  opacity: 1;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1;
+    padding: 10px 5px 10px 13px;
+  }
 
   &::placeholder {
     font: inherit;
@@ -13,7 +22,28 @@
     opacity: 1;
   }
 
-  &--border_color {
-    border-color: var(--special-dark-grey3, #cdcdcd);
+  &:hover {
+    border: 1px solid var(--special-dark-grey3, #cdcdcd);
+  }
+
+  &:focus {
+    outline: 2px solid var(--special-dark-grey, #444444);
+  }
+
+  &:active {
+    border: 1px solid var(--special-dark-grey3, #cdcdcd);
+  }
+
+  &:invalid {
+    // border: 1px solid var(--error, #ff8282);
+    outline: 2px solid var(--error, #ff8282);
+  }
+
+  &:focus + .contact-list__icon::after {
+    background-color: var(--basic-green, #68b738);
+  }
+
+  &:invalid + .contact-list__icon::after {
+    background-color: var(--error, #ff8282);
   }
 }

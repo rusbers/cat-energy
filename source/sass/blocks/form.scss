@@ -2,6 +2,14 @@
   --block-font-special: var(--oswald, "Tahoma", sans-serif);
   --block-font-basic: var(--arial, sans-serif);
   padding-bottom: 32px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-bottom: 82px;
+  }
 }
 
 .form__fieldset {
@@ -11,39 +19,75 @@
 }
 
 .form__client-data-list {
-  margin-bottom: 27px;
+  margin-bottom: 10px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 55px;
+  }
 }
 
 .form__radio-list {
   margin: 0;
   margin-bottom: 26px;
+  margin-right: -20px;
+  margin-left: -20px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    margin-bottom: 80px;
+  }
 }
 
 .form__checkbox-list {
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 40px;
+  margin-top: 7px;
+
+  @media (min-width: 768px) {
+    margin-top: 10px;
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 19px;
+  }
 }
 
 .form__contact-list {
-  margin-bottom: 24px;
+  margin-bottom: 11px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 52px;
+  }
 }
 
 .form__comment {
-  margin-bottom: 23px;
+  margin-bottom: 20px;
+  margin-top: 6px;
+
+  @media (min-width: 768px) {
+    margin-top: -1px;
+    margin-bottom: 68px;
+  }
 }
 
 .form__button {
   display: block;
-  padding: 7px 0 7px 0;
+  padding: 10px 0 10px 0;
   margin-bottom: 21px;
 
   @media (min-width: 768px) {
     width: 282px;
     margin-bottom: 0;
+    font-size: 20px;
+    line-height: 1;
+    padding: 16px 0 16px 0;
+    margin-left: 4px;
   }
 
   @media (min-width: 1440px) {
     width: 568px;
+    margin-left: 0;
   }
 }
 
@@ -62,9 +106,26 @@
   @media (min-width: 768px) {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 63px;
+  }
+
+  @media (min-width: 1440px) {
+    column-gap: 80px;
   }
 }
 
 .form__title-legend {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
+  margin-left: -20px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 82px;
+  }
+
+  &--margin_bottom {
+    @media (min-width: 768px) {
+      margin-bottom: 62px;
+    }
+  }
 }

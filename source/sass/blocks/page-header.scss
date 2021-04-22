@@ -1,9 +1,11 @@
 .page-header {
   position: relative;
+  border-bottom: 1px solid var(--special-grey2, #e6e6e6);
 
   @media (min-width: 768px) {
     display: flex;
     padding-top: 43px;
+    border: none;
   }
 
   @media (min-width: 1440px) {

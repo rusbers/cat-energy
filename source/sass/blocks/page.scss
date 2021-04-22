@@ -26,9 +26,22 @@
   }
 
   @media (min-width: 1440px) {
-    width: 1220px;
+    width: 100%;
+    max-width: 1220px;
     margin: 0 auto;
-    padding: 0 110px;
+    padding: 0;
+    // padding: 0 110px;
+  }
+
+  &--form {
+    @media (min-width: 768px) {
+      padding-right: 71px;
+      padding-left: 67px;
+    }
+
+    @media (min-width: 1440px) {
+      padding: 0;
+    }
   }
 }
 

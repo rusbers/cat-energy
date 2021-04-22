@@ -6,4 +6,9 @@
   font-weight: 400;
   text-transform: uppercase;
   color: var(--basic-black, #000000);
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: calc(30 / 20);
+  }
 }

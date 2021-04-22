@@ -1,0 +1,17 @@
+.radio-button {
+  &:checked + .radio__label::after {
+    content: "";
+    position: absolute;
+    width: 13.5px;
+    height: 13.5px;
+    background-color: var(--basic-green, #68b738);
+    border-radius: 50%;
+    left: -36px;
+
+    @media (min-width: 768px) {
+      width: 18px;
+      height: 18px;
+      left: -48px;
+    }
+  }
+}

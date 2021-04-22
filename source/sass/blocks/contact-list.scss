@@ -12,4 +12,51 @@
 .contact-list__item {
   display: grid;
   grid-template-columns: max-content 1fr;
+  align-items: center;
+  margin-bottom: 14px;
+  column-gap: 10px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+    column-gap: 23px;
+  }
+}
+
+// .contact-list__label {
+//   margin-right: 10px;
+// }
+
+.contact-list__field-wrapper {
+  position: relative;
+  display: grid;
+}
+
+.contact-list__icon {
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: #222222;
+    mask-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    top: 12px;
+    right: 15px;
+  }
+
+  &--a::after {
+    mask-image: url("../../img/stack.svg#email");
+  }
+
+  &--b::after {
+    mask-image: url("../../img/stack.svg#phone");
+  }
+}
+
+.contact-list__field {
+  padding: 13px 36px 13px 13px;
+
+  @media (min-width: 768px) {
+    padding: 10px 36px 10px 13px;
+  }
 }

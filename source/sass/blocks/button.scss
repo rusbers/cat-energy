@@ -11,8 +11,24 @@
   text-align: center;
   background-color: var(--basic-green, #68b738);
 
+  &:hover {
+    background-color: var(--green-hover, #5eaa2f);
+  }
+
+  &:active {
+    color: rgba(var(--rgb-basic-white, 255, 255, 255), 0.3);
+  }
+
   &--color {
     background-color: var(--basic-grey, #f2f2f2);
     color: var(--special-dark-grey, #444444);
+
+    &:hover {
+      background-color: var(--special-grey3, #ebebeb);
+    }
+
+    &:active {
+      color: rgba(var(--rgb-special-dark-grey, 68, 68, 68), 0.3);
+    }
   }
 }
