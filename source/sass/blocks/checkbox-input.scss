@@ -1,0 +1,15 @@
+.checkbox-input {
+  &:checked + .checkbox__label::after {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-image: url("../../img/stack.svg#tick");
+    background-repeat: no-repeat;
+    left: -42px;
+
+    @media (min-width: 768px) {
+      left: -52px;
+    }
+  }
+}

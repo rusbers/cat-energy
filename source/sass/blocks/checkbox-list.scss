@@ -6,9 +6,22 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    column-gap: 60px;
   }
 
   @media (min-width: 1440px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 71px;
+  }
+}
+
+.checkbox-list__item {
+  padding-left: 45px;
+  margin-bottom: 25px;
+
+  @media (min-width: 768px) {
+    padding-left: 62px;
+    margin-bottom: 51px;
   }
 }

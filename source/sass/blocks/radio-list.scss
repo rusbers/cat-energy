@@ -1,11 +1,22 @@
 .radio-list {
   list-style: none;
-  padding: 22px 0 19px 0;
+  padding: 29px 20px 0 20px;
 
   border-top: 1px solid var(--special-grey, #e7e7e7);
   border-bottom: 1px solid var(--special-grey, #e7e7e7);
 
   @media (min-width: 768px) {
+    padding: 33px 20px 0 20px;
     border: 1px solid var(--special-grey, #e7e7e7);
+  }
+}
+
+.radio-list__item {
+  padding-left: 45px;
+  margin-bottom: 25px;
+
+  @media (min-width: 768px) {
+    padding-left: 70px;
+    margin-bottom: 33px;
   }
 }

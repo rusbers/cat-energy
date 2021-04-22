@@ -1,0 +1,13 @@
+.fieldset-decoration {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: var(--basic-green, #68b738);
+    width: 100%;
+    top: 16px;
+    z-index: -3;
+  }
+}

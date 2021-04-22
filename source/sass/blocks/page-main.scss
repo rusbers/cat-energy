@@ -3,6 +3,18 @@
   margin-top: 27px;
   margin-bottom: 37px;
 
+  @media (min-width: 768px) {
+    margin-top: 58px;
+    margin-left: 2px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-top: 78px;
+    margin-left: 0;
+    margin-bottom: 56px;
+  }
+
   &--margin_bottom {
     margin-bottom: 41px;
   }
@@ -11,6 +23,11 @@
 .page-main__lead {
   margin: 0;
   margin-bottom: 39px;
+
+  @media (min-width: 768px) {
+    margin-left: 3px;
+    margin-bottom: 66px;
+  }
 }
 
 .page-main__main-products {

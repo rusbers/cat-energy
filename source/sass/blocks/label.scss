@@ -13,4 +13,9 @@
   &--color_b {
     color: var(--basic-black, #000000);
   }
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1;
+  }
 }
