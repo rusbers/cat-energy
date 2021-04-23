@@ -12,6 +12,8 @@
   padding: 8px 11px 8px 15px;
   width: 100%;
   min-height: 150px;
+  appearance: none;
+  border-radius: 0;
 
   @media (min-width: 768px) {
     font-size: 20px;
@@ -32,6 +34,7 @@
 
   &:focus {
     outline: 2px solid var(--special-dark-grey, #444444);
+    outline-offset: -2px;
   }
 
   &:active {
