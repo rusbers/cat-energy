@@ -17,11 +17,9 @@
 }
 
 .checkbox-list__item {
-  padding-left: 45px;
-  margin-bottom: 25px;
+  margin-bottom: 13px;
 
   @media (min-width: 768px) {
-    padding-left: 62px;
-    margin-bottom: 51px;
+    margin-bottom: 32px;
   }
 }
