@@ -28,7 +28,7 @@
 
 .form__radio-list {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 32px;
   margin-right: -20px;
   margin-left: -20px;
 
@@ -62,6 +62,7 @@
 }
 
 .form__comment {
+  margin: 0;
   margin-bottom: 20px;
   margin-top: 6px;
 
@@ -116,7 +117,7 @@
 }
 
 .form__title-legend {
-  margin-bottom: 33px;
+  margin-bottom: 35px;
   margin-left: -20px;
 
   @media (min-width: 768px) {

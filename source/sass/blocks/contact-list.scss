@@ -22,9 +22,9 @@
   }
 }
 
-// .contact-list__label {
-//   margin-right: 10px;
-// }
+.contact-list__label {
+  white-space: nowrap;
+}
 
 .contact-list__field-wrapper {
   position: relative;
@@ -45,18 +45,14 @@
   }
 
   &--a::after {
-    mask-image: url("../../img/stack.svg#email");
+    mask-image: url("../../img/stack.svg#mail");
   }
 
   &--b::after {
-    mask-image: url("../../img/stack.svg#phone");
+    mask-image: url("../../img/stack.svg#telephone");
   }
 }
 
 .contact-list__field {
-  padding: 13px 36px 13px 13px;
-
-  @media (min-width: 768px) {
-    padding: 10px 36px 10px 13px;
-  }
+  padding: 10px 36px 10px 13px;
 }
