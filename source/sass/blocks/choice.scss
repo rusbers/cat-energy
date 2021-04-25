@@ -1,0 +1,65 @@
+.choice__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+
+  &::before {
+    content: "";
+    display: block;
+    background-color: var(--special-dark-grey3, #cdcdcd);
+    mask-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+
+    @media (min-width: 768px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: var(--basic-green, #68b738);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 0 0;
+    top: 0;
+    left: 0;
+    transition: mask-size 0.2s;
+
+    @media (min-width: 768px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &--radio {
+    &::before {
+      mask-image: url("../../img/stack.svg#radiobutton");
+    }
+
+    &::after {
+      mask-image: url("../../img/stack.svg#radiobutton-active");
+    }
+  }
+
+  &--checkbox {
+    &::before {
+      mask-image: url("../../img/stack.svg#checkbox");
+    }
+
+    &::after {
+      mask-image: url("../../img/stack.svg#checkbox-active");
+    }
+  }
+
+  &:hover::before {
+    background-color: var(--special-grey4, #bababa);
+  }
+}

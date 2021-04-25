@@ -41,11 +41,11 @@
           <legend class="visually-hidden">Данные кота</legend>
           <div class="form__client-data-list client-data-list">
             <div class="client-data-list__item">
-              <label class="client-data-list__label label" for="cat-name">Имя:<sup>*</sup></label>
+              <label class="client-data-list__label label" for="cat-name">Имя:<span aria-hidden="true">*</span></label>
               <input class="client-data-list__field field" type="text" id="cat-name" name="cat-name" placeholder="Барсик">
             </div>
             <div class="client-data-list__item">
-              <label class="client-data-list__label label" for="cat-weight">Вес (кг):<sup>*</sup></label>
+              <label class="client-data-list__label label" for="cat-weight">Вес (кг):<span aria-hidden="true">*</span></label>
               <input class="client-data-list__field field" type="text" id="cat-weight" name="cat-weight" pattern="[0-9]{1,2}" placeholder="7">
             </div>
             <div class="client-data-list__item">
@@ -58,21 +58,21 @@
           <legend class="visually-hidden">Цель подбора питания</legend>
           <ul class="form__radio-list radio-list">
             <li class="radio-list__item">
-              <div class="radio">
-                <input class="visually-hidden radio-button" type="radio" id="lose-weight" name="program-goal" value="lose-weight">
-                <label class="radio__label label label--color_a" for="lose-weight">Похудение</label>
+              <div class="choice">
+                <input class="visually-hidden option" type="radio" id="lose-weight" name="program-goal" value="lose-weight">
+                <label class="choice__label choice__label--radio label label--color_a" for="lose-weight">Похудение</label>
               </div>
             </li>
             <li class="radio-list__item">
-              <div class="radio">
-                <input class="visually-hidden radio-button" type="radio" id="gain-weight" name="program-goal" value="gain-weight">
-                <label class="radio__label label label--color_a" for="gain-weight">Набор массы</label>
+              <div class="choice">
+                <input class="visually-hidden option" type="radio" id="gain-weight" name="program-goal" value="gain-weight">
+                <label class="choice__label choice__label--radio label label--color_a" for="gain-weight">Набор массы</label>
               </div>
             </li>
             <li class="radio-list__item">
-              <div class="radio">
-                <input class="visually-hidden radio-button" type="radio" id="undefined" name="program-goal" value="undefined" checked>
-                <label class="radio__label label label--color_a" for="undefined">Не знаю (Нужен ваш совет)</label>
+              <div class="radio choice">
+                <input class="visually-hidden option" type="radio" id="undefined" name="program-goal" value="undefined" checked disabled>
+                <label class="choice__label choice__label--radio label label--color_a" for="undefined">Не знаю (Нужен ваш совет)</label>
               </div>
             </li>
           </ul>
@@ -84,14 +84,14 @@
             <legend class="form__title-legend title-legend title-legend--width title-legend--line-height">Контактные данные (владельца кота)</legend>
             <div class="form__contact-list contact-list">
               <div class="contact-list__item">
-                <label class="contact-list__label label" for="email">E-mail:<sup>*</sup></label>
+                <label class="contact-list__label label" for="email">E-mail:<span aria-hidden="true">*</span></label>
                 <div class="contact-list__field-wrapper">
                   <input class="contact-list__field field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
                   <span class="contact-list__icon contact-list__icon--a"></span>
                 </div>
               </div>
               <div class="contact-list__item">
-                <label class="contact-list__label label" for="phone-number">Телефон:<sup>*</sup></label>
+                <label class="contact-list__label label" for="phone-number">Телефон:<span aria-hidden="true">*</span></label>
                 <div class="contact-list__field-wrapper">
                   <input class="contact-list__field field" type="tel" id="phone-number" name="phone-number" pattern="[0-9]{1,11}" placeholder="8 (960) 900-60-90">
                   <span class="contact-list__icon contact-list__icon--b"></span>
@@ -117,29 +117,28 @@
             <legend class="form__title-legend form__title-legend--margin_bottom title-legend title-legend--line-height">Дополнительно</legend>
             <ul class="form__checkbox-list checkbox-list">
               <li class="checkbox-list__item">
-                <div class="checkbox">
-                  <input class="visually-hidden checkbox-input" type="checkbox" id="sweetener" name="optional-add" value="sweetener" checked>
-                  <label class="checkbox__label label label--color_b" for="sweetener">Cахарозаменитель</label>
+                <div class="choice">
+                  <input class="visually-hidden option" type="checkbox" id="sweetener" name="optional-add" value="sweetener" checked disabled>
+                  <label class="choice__label choice__label--checkbox label label--color_b" for="sweetener">Cахарозаменитель</label>
                 </div>
               </li>
               <li class="checkbox-list__item">
-                <div class="checkbox">
-                  <input class="visually-hidden checkbox-input" type="checkbox" id="water" name="optional-add"
+                <div class="choice">
+                  <input class="visually-hidden option" type="checkbox" id="water" name="optional-add"
                     value="water">
-                  <label class="checkbox__label label label--color_b" for="water">Питьевая вода</label>
+                  <label class="choice__label choice__label--checkbox label label--color_b" for="water">Питьевая вода</label>
                 </div>
               </li>
               <li class="checkbox-list__item">
-                <div class="checkbox">
-                  <input class="visually-hidden checkbox-input" type="checkbox" id="milk" name="optional-add" value="milk">
-                  <label class="checkbox__label label label--color_b" for="milk">Молоко</label>
+                <div class="choice">
+                  <input class="visually-hidden option" type="checkbox" id="milk" name="optional-add" value="milk">
+                  <label class="choice__label choice__label--checkbox label label--color_b" for="milk">Молоко</label>
                 </div>
               </li>
               <li class="checkbox-list__item">
-                <div class="checkbox">
-                  <input class="visually-hidden checkbox-input" type="checkbox" id="vitamins" name="optional-add"
-                    value="vitamins">
-                  <label class="checkbox__label label label--color_b" for="vitamins">Витамины</label>
+                <div class="choice">
+                  <input class="visually-hidden option" type="checkbox" id="vitamins" name="optional-add" value="vitamins">
+                  <label class="choice__label choice__label--checkbox label label--color_b" for="vitamins">Витамины</label>
                 </div>
               </li>
             </ul>
@@ -148,7 +147,7 @@
       </div>
       <div class="page__wrapper page__wrapper--form form__bottom-layout">
         <button class="form__button button" type="submit">Отправить заявку</button>
-        <small class="legend">* &mdash; Обязательные поля</small>
+        <small class="legend"><span aria-hidden="true">*</span> &mdash; Обязательные поля</small>
       </div>
     </form>
   </main>
