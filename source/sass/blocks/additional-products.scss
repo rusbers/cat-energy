@@ -1,5 +1,13 @@
 .additional-products__additional-products-list {
   margin: 0;
+
+  @media (min-width: 768px) {
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 0;
+  }
 }
 
 .additional-products__inner {
@@ -7,5 +15,30 @@
     display: grid;
     grid-template-columns: 1fr 245px;
     column-gap: 80px;
+  }
+}
+
+.additional-products__line-decoration::after {
+  top: 14px;
+
+  @media (min-width: 768px) {
+    top: 22px;
+  }
+}
+
+.additional-products__title-legend {
+  margin: 0;
+  margin-left: -20px;
+  margin-bottom: 35px;
+
+  @media (min-width: 768px) {
+    margin-left: 0;
+    padding-left: 37px;
+    padding-right: 35px;
+    margin-bottom: 81px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 79px;
   }
 }

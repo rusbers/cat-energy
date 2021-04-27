@@ -17,6 +17,15 @@
 
   &--margin_bottom {
     margin-bottom: 41px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 83px;
+    }
+
+    @media (min-width: 1440px) {
+      margin-top: 48px;
+      margin-bottom: 82px;
+    }
   }
 }
 
@@ -31,5 +40,13 @@
 }
 
 .page-main__main-products {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 81px;
+  }
 }

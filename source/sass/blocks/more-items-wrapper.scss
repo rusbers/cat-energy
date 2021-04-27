@@ -1,0 +1,5 @@
+.more-items-wrapper {
+  @media (min-width: 768px) {
+    padding-top: calc(511px - 429px);
+  }
+}

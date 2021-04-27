@@ -2,6 +2,13 @@
   --block-font-special: var(--oswald, "Tahoma", sans-serif);
   text-decoration: none;
   text-transform: uppercase;
+  display: block;
+  max-width: 76px;
+
+  @media (min-width: 768px) {
+    max-width: 155px;
+    text-align: center;
+  }
 }
 
 .product-link__title {
@@ -10,8 +17,20 @@
   line-height: 20px;
   font-weight: 400;
   color: var(--special-dark-grey2, #222222);
+  margin: 0;
+  margin-bottom: 15px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    margin-bottom: 0;
+  }
 
   &--line-height {
     line-height: 16px;
+
+    @media (min-width: 768px) {
+      line-height: calc(20 / 20);
+    }
   }
 }
