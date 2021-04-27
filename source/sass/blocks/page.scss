@@ -90,6 +90,10 @@
 }
 
 .page__additional-products {
+  @media (min-width: 768px) {
+    margin-bottom: 76px;
+  }
+
   @media (min-width: 1440px) {
     margin-bottom: 86px;
   }

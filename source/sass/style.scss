@@ -10,6 +10,8 @@
 @import "./blocks/page.scss";
 @import "./blocks/page-header.scss";
 @import "./blocks/page-main.scss";
+@import "./blocks/content.scss";
+@import "./blocks/line-decoration.scss";
 @import "./blocks/button.scss";
 @import "./blocks/title.scss";
 @import "./blocks/text.scss";
@@ -37,12 +39,14 @@
 @import "./blocks/legend.scss";
 @import "./blocks/products-list.scss";
 @import "./blocks/product-link.scss";
+@import "./blocks/picture-link.scss";
 @import "./blocks/product-description.scss";
 @import "./blocks/additional-products.scss";
 @import "./blocks/additional-product.scss";
 @import "./blocks/gift-promo.scss";
 @import "./blocks/map.scss";
 @import "./blocks/product.scss";
+@import "./blocks/more-items-wrapper.scss";
 @import "./blocks/more-items.scss";
 @import "./blocks/additional-products-list.scss";
 @import "./blocks/main-products.scss";
@@ -51,7 +55,6 @@
 @import "./blocks/range.scss";
 @import "./blocks/choice.scss";
 @import "./blocks/option.scss";
-@import "./blocks/fieldset-decoration.scss";
 
 // === END BLOCKS ===
 
