@@ -13,6 +13,11 @@
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+    padding-top: 15px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 12px;
   }
 }
 

@@ -4,12 +4,13 @@
 
   @media (min-width: 768px) {
     display: flex;
-    padding-top: 43px;
+    padding-top: 24px;
     border: none;
+    align-items: center;
   }
 
   @media (min-width: 1440px) {
-    padding-top: 69px;
+    padding-top: 52px;
   }
 }
 
@@ -23,6 +24,6 @@
 
 .page-header__inner {
   @media (min-width: 1440px) {
-    margin-bottom: 32px;
+    margin-bottom: 28px;
   }
 }

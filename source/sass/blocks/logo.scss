@@ -3,8 +3,31 @@
   padding-top: 11px;
   padding-bottom: 14px;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: 768px) {
     padding: 0;
+  }
+}
+
+.logo__img {
+  width: 34px;
+  height: 38px;
+
+  @media (min-width: 768px) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 202px;
+    height: 59px;
   }
 }
 
@@ -14,6 +37,7 @@
   top: 24px;
 
   @media (min-width: 768px) {
-    position: static;
+    // position: static;
+    display: none;
   }
 }
