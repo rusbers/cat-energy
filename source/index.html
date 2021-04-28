@@ -9,7 +9,11 @@
   <body class="page__body">
     <header class="page__wrapper page-header page-header__inner">
       <a class="page-header__logo logo">
-        <img class="logo__mascot" src="img/header/logo-mascot.svg" width="34" height="38" alt="Логотип">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/header/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg">
+          <img class="logo__img" src="img/header/logo-mascot.svg" width="34" height="38" alt="Логотип">
+        </picture>
         <img class="logo__text" src="img/header/logo-text.svg" width="101" height="18" alt="Название магазина в виде логотипа — «Cat Energy»">
       </a>
       <nav class="main-navigation">
@@ -35,7 +39,13 @@
           <p class="promo__title title title--color">Функциональное питание для котов</p>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <a class="promo__button button" href="form.html">Подобрать программу</a>
-          <img class="promo__image" src="img/promo/promo-item.png" width="280" height="270" alt="Оранжевая консерва с кормом для котов из ассортимента Cat Energy Pro со вкусом курицы, без консервантов и с объемом в 500 грамм.">
+          <div class="promo__image-wrapper">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/promo/promo-item-desktop.png 1x, img/promo/promo-item-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/promo/promo-item-tablet.png 1x, img/promo/promo-item-tablet@2x.png 2x">
+              <img class="promo__image" src="img/promo/promo-item-mobile.png" srcset="img/promo/promo-item-mobile@2x.png 2x" width="280" height="270" alt="Оранжевая консерва с кормом для котов из ассортимента Cat Energy Pro со вкусом курицы, без консервантов и с объемом в 500 грамм.">
+            </picture>
+          </div>
         </div>
       </section>
       <section class="page__wrapper page__product-categories product-categories">
@@ -92,8 +102,14 @@
           </dl>
           <div class="result-example__slider slider">
             <div class="slider__items">
-              <img class="slider__before" src="img/slider/before.png" width="311" height="232" alt="Кот Борис с большим избыточном весом перед тем, как начать диету основанной на корме Cat Energy Slim. Окрас кота серо белый, а глаза разноцветные (один зелёный, другой жёлтый).">
-              <img class="slider__after" src="img/slider/after.png" width="251" height="240" alt="Тот же самый кот Борис, но теперь с очень стройной фигурой, которую он получил благодоря диете, основанной на корме Cat Energy Slim." hidden>
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/slider/cat-fat-big-screen.png 1x, img/slider/cat-fat-big-screen@2x.png 2x">
+                <img class="slider__before" src="img/slider/cat-fat-mobile.png" srcset="img/slider/cat-fat-mobile@2x.png 2x" width="280" height="232" alt="Кот Борис с большим избыточном весом перед тем, как начать диету основанной на корме Cat Energy Slim. Окрас кота серо белый, а глаза разноцветные (один зелёный, другой жёлтый).">
+              </picture>
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/slider/cat-skinny-big-screen.png 1x, img/slider/cat-skinny-big-screen@2x.png 2x">
+                <img class="slider__after" src="img/slider/cat-skinny-mob.png" srcset="img/slider/cat-skinny-mob@2x.png 2px" width="251" height="240" alt="Тот же самый кот Борис, но теперь с очень стройной фигурой, которую он получил благодоря диете, основанной на корме Cat Energy Slim." hidden>
+              </picture>
             </div>
             <div class="slider__toggle toggle" hidden>
               <button class="toggle__button toggle__before">Было</button>
