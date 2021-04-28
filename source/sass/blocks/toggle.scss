@@ -1,5 +1,6 @@
 .toggle {
   --block-font-special: var(--oswald, "Tahoma", sans-serif);
+  display: block;
 
   @media (min-width: 767.5px) {
     display: none;

@@ -13,7 +13,7 @@
         <img class="logo__text" src="img/header/logo-text.svg" width="101" height="18" alt="Название магазина в виде логотипа — «Cat Energy»">
       </a>
       <nav class="main-navigation">
-        <button class="main-navigation__toggle main-navigation__toggle--open"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-navigation__toggle main-navigation__toggle--open" hidden><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-navigation__list">
           <li class="main-navigation__item main-navigation__item--current main-navigation__item--current_color">
             <a class="main-navigation__link main-navigation__link--font_color">Главная</a>
@@ -95,14 +95,14 @@
               <img class="slider__before" src="img/slider/before.png" width="311" height="232" alt="Кот Борис с большим избыточном весом перед тем, как начать диету основанной на корме Cat Energy Slim. Окрас кота серо белый, а глаза разноцветные (один зелёный, другой жёлтый).">
               <img class="slider__after" src="img/slider/after.png" width="251" height="240" alt="Тот же самый кот Борис, но теперь с очень стройной фигурой, которую он получил благодоря диете, основанной на корме Cat Energy Slim." hidden>
             </div>
-            <div class="slider__toggle toggle">
+            <div class="slider__toggle toggle" hidden>
               <button class="toggle__button toggle__before">Было</button>
                 <div class="toggle__state">
                   <div class="toggle__switch"></div> <!-- after - меняет состояние -->
                 </div>
               <button class="toggle__button toggle__after">Стало</button>
             </div>
-            <div class="slider__range range"> <!-- Элемент добавлен, потому что на других вьюпортах вместо кнопки переключателя появляется ползунок -->
+            <div class="slider__range range" hidden> <!-- Элемент добавлен, потому что на других вьюпортах вместо кнопки переключателя появляется ползунок -->
               <button class="range__button">Было</button>
                 <div class="range__bar">
                   <button class="range__control" aria-label="Потяните ползунок чтобы заметить различия">
