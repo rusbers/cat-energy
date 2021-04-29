@@ -5,15 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Страница подбора программы питания для вашего кота</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/fav-152.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page__wrapper page-header">
-    <a class="page-header__logo logo" href="index.html">
-      <img class="logo__mascot" src="img/header/logo-mascot.svg" width="34" height="38" alt="Логотип">
-      <img class="logo__text" src="img/header/logo-text.svg" width="101" height="18"
-        alt="Название магазина в виде логотипа — «Cat Energy»">
+    <a class="page-header__logo logo">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/header/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg">
+        <img class="logo__img" src="img/header/logo-mascot.svg" width="34" height="38" alt="Логотип">
+      </picture>
+      <img class="logo__text" src="img/header/logo-text.svg" width="101" height="18" alt="Название магазина в виде логотипа — «Cat Energy»">
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle main-navigation__toggle--open"><span class="visually-hidden">Открыть меню</span></button>
