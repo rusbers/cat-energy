@@ -5,6 +5,7 @@
   &--has_background {
     &::before {
       content: "";
+      background-color: var(--grey-bg, #46454a);
       background-image: linear-gradient(rgba(var(--rgb-basic-green, 104, 183, 56), 0.85), rgba(var(--rgb-basic-green, 104, 183, 56), 0.85)), url("../../img/promo/promo-bg-mobile.jpg"), url(".././img/promo/promo-bg-mobile.jpg");
       width: 100%;
       height: 302px;
