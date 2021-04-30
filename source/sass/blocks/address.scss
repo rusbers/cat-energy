@@ -80,32 +80,42 @@
     padding-right: 89px;
     margin-left: 110px;
     top: 95px;
+    z-index: 5;
   }
 }
 
 .address__bottom-wrapper {
-  background-image: url("../../img/map/location-mob.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../../img/map/location-mob@2x.png");
-  }
+  position: relative;
+  min-height: 362px;
 
   @media (min-width: 768px) {
-    background-image: url("../../img/map/location-tablet.png");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/map/location-tablet@2x.png");
-    }
-  }
-
-  @media (min-width: 1440px) {
-    background-image: url("../../img/map/location-desktop.png");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/map/location-desktop@2x.png");
-    }
+    min-height: 400px;
   }
 }
+
+// .address__bottom-wrapper {
+//   background-image: url("../../img/map/location-mob.png");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+
+//   @media (min-resolution: 2dppx) {
+//     background-image: url("../../img/map/location-mob@2x.png");
+//   }
+
+//   @media (min-width: 768px) {
+//     background-image: url("../../img/map/location-tablet.png");
+
+//     @media (min-resolution: 2dppx) {
+//       background-image: url("../../img/map/location-tablet@2x.png");
+//     }
+//   }
+
+//   @media (min-width: 1440px) {
+//     background-image: url("../../img/map/location-desktop.png");
+
+//     @media (min-resolution: 2dppx) {
+//       background-image: url("../../img/map/location-desktop@2x.png");
+//     }
+//   }
+// }
