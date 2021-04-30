@@ -8,9 +8,13 @@
   @media (min-width: 768px) {
     grid-row: 1/2;
     padding: 0;
-    align-self: initial;
-    // justify-self: center;
-    // align-self: flex-start;
+    align-self: center;
+  }
+
+  &--align_big-pic {
+    @media (min-width: 1440px) {
+      align-self: flex-start;
+    }
   }
 }
 
