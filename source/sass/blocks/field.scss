@@ -8,11 +8,11 @@
   color: var(--special-dark-grey, #444444);
   border: 1px solid var(--special-grey, #e7e7e7);
   border-radius: 0;
-  // padding: 13px 5px 13px 13px;
-  padding: 10px 0 10px 13px;
+  padding: 10px 10px 10px 13px;
   outline: 0;
   opacity: 1;
   appearance: none;
+  min-width: 160px;
 
   @media (min-width: 768px) {
     font-size: 20px;
