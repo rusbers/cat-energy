@@ -24,9 +24,11 @@
 
 .social-list__link::after {
   content: "";
+  // display: none;
   display: inline-block;
   background-color: var(--icon-grey, #666666);
-  mask-image: url("../../img/stack.svg#vkontakte");
+  // mask-image: url("../../img/stack.svg#vkontakte");
+  mask-image: url("../../img/ico-stack.svg#vk");
   mask-repeat: no-repeat;
   width: 25px;
   height: 30px;
@@ -39,11 +41,13 @@
 
 .social-list__link {
   &--instagram::after {
-    mask-image: url("../../img/stack.svg#instagram");
+    // mask-image: url("../../img/stack.svg#instagram");
+    mask-image: url("../../img/ico-stack.svg#insta");
   }
 
   &--facebook::after {
-    mask-image: url("../../img/stack.svg#facebook");
+    // mask-image: url("../../img/stack.svg#facebook");
+    mask-image: url("../../img/ico-stack.svg#fb");
   }
 
   &:hover::after {
@@ -53,4 +57,17 @@
   &:active::after {
     opacity: 0.3;
   }
+}
+
+.social-list__icon {
+  display: none;
+  fill: var(--icon-grey, #666666);
+}
+
+.social-list__link:hover .social-list__icon {
+  fill: var(--basic-green, #68b738);
+}
+
+.social-list__link:active .social-list__icon {
+  opacity: 0.3;
 }
