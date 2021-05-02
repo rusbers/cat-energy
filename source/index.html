@@ -107,10 +107,14 @@
           <div class="result-example__slider slider">
             <div class="slider__items">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/cat-fat-big-screen.webp 1x, img/slider/cat-fat-big-screen@2x.webp 2x">
+                <source type="image/webp" srcset="img/slider/cat-fat-mobile.webp 1x,img/slider/cat-fat-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/slider/cat-fat-big-screen.png 1x, img/slider/cat-fat-big-screen@2x.png 2x">
                 <img class="slider__before" src="img/slider/cat-fat-mobile.png" srcset="img/slider/cat-fat-mobile@2x.png 2x" width="280" height="232" alt="Кот Борис с большим избыточном весом перед тем, как начать диету основанной на корме Cat Energy Slim. Окрас кота серо белый, а глаза разноцветные (один зелёный, другой жёлтый).">
               </picture>
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/cat-skinny-big-screen.webp 1x, img/slider/cat-skinny-big-screen@2x.webp 2x">
+                <source type="image/webp" srcset="img/slider/cat-skinny-mob.webp 1x, img/slider/cat-skinny-mob@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/slider/cat-skinny-big-screen.png 1x, img/slider/cat-skinny-big-screen@2x.png 2x">
                 <img class="slider__after" src="img/slider/cat-skinny-mob.png" srcset="img/slider/cat-skinny-mob@2x.png 2x" width="251" height="240" alt="Тот же самый кот Борис, но теперь с очень стройной фигурой, которую он получил благодоря диете, основанной на корме Cat Energy Slim." hidden>
               </picture>
@@ -153,7 +157,7 @@
           <picture>
             <source media="(min-width: 1440px)" srcset="img/map/location-desktop.png 1x, img/map/location-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/map/location-tablet.png 1x, img/map/location-tablet@2x.png 2x">
-            <img class="static-map" src="img/map/location-mob.png" srcset="img/map/location-mob@2x.png" width="320" height="362" alt="lorem">
+            <img class="static-map" src="img/map/location-mob.png" srcset="img/map/location-mob@2x.png 2x" width="320" height="362" alt="lorem">
           </picture>
           <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.118506746264!2d30.3232198!3d59.9394554!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Rusia%2C%20191186!5e0!3m2!1sro!2sro!4v1616842319284!5m2!1sro!2sro" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
@@ -164,16 +168,25 @@
           <ul class="page-footer__social-list social-list">
             <li class="social-list__item">
               <a class="social-list__link social-list__link--vkontakte" href="#">
+                <svg class="social-list__icon" width="25" height="30">
+                  <use xlink:href="img/sprite.svg#ico-vk">
+                </svg>
                 <span class="visually-hidden">Перейти на нашу страницу в Вконтакте</span>
               </a>
             </li>
             <li class="social-list__item social-list__item--ident">
               <a class="social-list__link social-list__link--instagram" href="#">
+                <svg class="social-list__icon" width="25" height="30">
+                  <use xlink:href="img/sprite.svg#ico-insta">
+                </svg>
                 <span class="visually-hidden">Перейти на нашу страницу в Инстаграме</span>
               </a>
             </li>
             <li class="social-list__item">
               <a class="social-list__link social-list__link--facebook" href="#">
+                <svg class="social-list__icon" width="25" height="30">
+                  <use xlink:href="img/sprite.svg#ico-fb">
+                </svg>
                 <span class="visually-hidden">Перейти на нашу страницу в Фейсбуке</span>
               </a>
             </li>
