@@ -5,13 +5,13 @@
     margin-bottom: 68px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     margin-bottom: 0;
   }
 }
 
 .additional-products__inner {
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     display: grid;
     grid-template-columns: 1fr 245px;
     column-gap: 80px;
@@ -38,7 +38,7 @@
     margin-bottom: 81px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     margin-bottom: 79px;
   }
 }

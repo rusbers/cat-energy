@@ -10,7 +10,7 @@
     row-gap: 0;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     border: none;
     row-gap: 0;
   }
@@ -24,7 +24,7 @@
     border-bottom: 1px solid var(--special-dark-grey3, #cdcdcd);
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     border-top: 1px solid var(--special-dark-grey3, #cdcdcd);
     border-bottom: none;
   }
@@ -38,7 +38,7 @@
       padding-bottom: 0;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1280px) {
       border-bottom: 1px solid var(--special-dark-grey3, #cdcdcd);
     }
   }

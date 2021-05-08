@@ -2,7 +2,7 @@
   --block-font-special: var(--oswald, "Tahoma", sans-serif);
   --block-font-basic: var(--arial, sans-serif);
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     position: relative;
   }
 }
@@ -23,7 +23,7 @@
     line-height: calc(21 / 20);
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     padding-right: 87px;
   }
 }
@@ -70,7 +70,7 @@
     padding: 66px 70px 56px 70px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     position: absolute;
     background-color: var(--basic-white, #ffffff);
     width: auto;
@@ -111,7 +111,7 @@
 //     }
 //   }
 
-//   @media (min-width: 1440px) {
+//   @media (min-width: 1280px) {
 //     background-image: url("../../img/map/location-desktop.png");
 
 //     @media (min-resolution: 2dppx) {

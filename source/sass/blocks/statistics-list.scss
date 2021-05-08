@@ -13,7 +13,7 @@
     column-gap: 42px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr max-content;
     margin-right: 70px;
@@ -50,7 +50,7 @@
     padding-top: 8px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     justify-self: normal;
     flex-direction: row;
     grid-column: 1/-1;
@@ -87,7 +87,7 @@
       line-height: 1;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1280px) {
       margin-right: auto;
     }
   }
@@ -104,7 +104,7 @@
       top: 61px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1280px) {
       background-color: var(--special-grey-bg, #eaeaea);
     }
   }
@@ -154,7 +154,7 @@
       align-self: flex-end;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1280px) {
       align-self: initial;
     }
   }

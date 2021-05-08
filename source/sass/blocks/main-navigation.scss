@@ -16,7 +16,7 @@
     padding-top: 15px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     padding-top: 12px;
   }
 }
@@ -78,7 +78,7 @@
     }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     font-size: 20px;
     line-height: normal;
 
@@ -94,7 +94,7 @@
   text-decoration: none;
   color: var(--basic-black, #000000);
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     &--font_color {
       color: var(--basic-white, #ffffff);
     }
