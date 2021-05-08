@@ -23,7 +23,7 @@
         display: none;
       }
 
-      @media (min-width: 1440px) {
+      @media (min-width: 1280px) {
         display: block;
         background-image: linear-gradient(rgba(var(--rgb-basic-green, 104, 183, 56), 0.85), rgba(var(--rgb-basic-green, 104, 183, 56), 0.85)), url("../../img/promo/promo-bg-desk.jpg"), url(".././img/promo/promo-bg-desk.jpg");
         width: 50%;
@@ -55,7 +55,7 @@
     margin-bottom: 40px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     margin-left: 80px;
     margin-top: 81px;
   }
@@ -82,7 +82,7 @@
     margin-bottom: 49px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     margin-left: 80px;
     margin-bottom: 52px;
   }
@@ -92,7 +92,7 @@
   display: grid;
   grid-template-rows: auto auto auto auto;
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     grid-template-rows: max-content max-content auto;
     grid-template-columns: max-content 1fr;
   }
@@ -117,7 +117,7 @@
     line-height: 1;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     height: fit-content;
     grid-row: 3/4;
     margin-left: 80px;
@@ -135,7 +135,7 @@
     padding-top: 40px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     justify-self: start;
     grid-column: 2/3;
     grid-row: 1/4;
@@ -157,7 +157,7 @@
     height: 609px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     width: 552px;
     height: 499px;
   }

@@ -7,7 +7,7 @@
     padding-bottom: 72px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     padding-bottom: 82px;
   }
 }
@@ -86,14 +86,14 @@
     margin-left: 4px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     width: 568px;
     margin-left: 0;
   }
 }
 
 .form__top-layout {
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
@@ -111,7 +111,7 @@
     column-gap: 63px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     column-gap: 80px;
   }
 }
