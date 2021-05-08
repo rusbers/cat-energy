@@ -1,13 +1,17 @@
 .page {
   --main-font-set: var(--oswald, "Tahoma", sans-serif);
   --scrollbar-size: calc(100vw - 100%);
-  --content-indent: 30px;
+  --content-indent: 20px;
   font-family: var(--main-font-set);
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: var(--special-dark-grey, #444444);
   height: 100%;
+
+  @media (min-width: 768px) {
+    --content-indent: 30px;
+  }
 }
 
 .page__body {
@@ -21,20 +25,20 @@
 
 .page__wrapper {
   // width: 280px;
-  margin-left: var(--content-indent);
-  margin-right: calc(var(--content-indent) - var(--scrollbar-size));
-  padding: 0 20px;
+  padding-left: var(--content-indent);
+  padding-right: calc(var(--content-indent) - var(--scrollbar-size));
+  // padding: 0 20px;
 
-  @media (min-width: 768px) {
-    // width: 708px;
-    padding: 0 30px;
-  }
+  // @media (min-width: 768px) {
+  //   width: 708px;
+  //   padding: 0 30px;
+  // }
 
   @media (min-width: 1280px) {
     width: 100%;
     max-width: 1220px;
     margin: 0 auto;
-    padding: 0 30px;
+    // padding: 0 30px;
   }
 
   &--form {
