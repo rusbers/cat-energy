@@ -28,12 +28,18 @@
   @media (min-width: 768px) {
     padding: 66px 22px 40px 52px;
     margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: min-content 1fr min-content;
   }
 
   @media (min-width: 1280px) {
     padding-top: 77px;
     padding-bottom: 59px;
     margin-bottom: 0;
+    // display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content 1fr min-content;
   }
 
   &--has_icon {
@@ -53,19 +59,25 @@
       @media (min-width: 768px) {
         width: 280px;
         height: 280px;
-        float: right;
+        float: none;
         margin-left: -18px;
         margin-right: 0;
         margin-top: -15px;
+        grid-row: 1/-1;
+        grid-column: -1/-2;
+        align-self: center;
       }
 
       @media (min-width: 1280px) {
         width: 140px;
         height: 140px;
-        float: left;
+        // float: left;
         margin-left: -20px;
         margin-top: -50px;
         margin-right: 52px;
+        grid-row: 1/2;
+        grid-column: 1/2;
+        align-self: initial;
       }
     }
   }
@@ -106,6 +118,8 @@
   @media (min-width: 1280px) {
     margin-bottom: 73px;
     margin-top: 0;
+    grid-row: 1/2;
+    grid-column: 2/3;
   }
 }
 
@@ -122,6 +136,11 @@
 
   @media (min-width: 768px) {
     font-size: 20px;
+  }
+
+  @media (min-width: 1280px) {
+    grid-row: -1/-2;
+    grid-column: 1/-1;
   }
 
   &::after {
@@ -156,7 +175,9 @@
     border: none;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1280px) {
     margin-bottom: 28px;
+    grid-column: 1/-1;
+    grid-row: 2/3;
   }
 }

@@ -1,6 +1,10 @@
 .main-navigation {
   --block-font-special: var(--oswald, "Tahoma", sans-serif);
-  flex-grow: 1;
+  // flex-grow: 1;
+
+  @media (min-width: 1280px) {
+    max-width: 50%;
+  }
 }
 
 .main-navigation__list {
@@ -11,7 +15,8 @@
 
   @media (min-width: 768px) {
     display: flex;
-    justify-content: flex-end;
+    // justify-content: flex-end;
+    justify-content: center;
     flex-wrap: wrap;
     padding-top: 15px;
   }
@@ -93,6 +98,14 @@
 .main-navigation__link {
   text-decoration: none;
   color: var(--basic-black, #000000);
+  max-width: 280px;
+  display: inline-block;
+  overflow-wrap: break-word;
+
+  @media (min-width: 768px) {
+    max-width: none;
+    overflow-wrap: normal;
+  }
 
   @media (min-width: 1280px) {
     &--font_color {

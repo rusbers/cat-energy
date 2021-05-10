@@ -10,6 +10,7 @@
   text-decoration: none;
   text-align: center;
   background-color: var(--basic-green, #68b738);
+  box-sizing: border-box;
 
   &:hover {
     background-color: var(--green-hover, #5eaa2f);

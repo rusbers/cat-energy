@@ -23,11 +23,13 @@
   @media (min-width: 768px) {
     width: 174px;
     height: 52px;
+    padding-right: 10px;
   }
 
   @media (min-width: 1280px) {
     width: 202px;
     height: 59px;
+    padding-right: 0;
   }
 }
 
