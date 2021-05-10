@@ -5,6 +5,7 @@
   line-height: 1;
   font-weight: 400;
   color: var(--basic-black, #000000);
+  word-break: break-word;
 
   &--color {
     color: var(--basic-white, #ffffff);

@@ -1,6 +1,10 @@
 .toggle {
   --block-font-special: var(--oswald, "Tahoma", sans-serif);
-  display: block;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 
   @media (min-width: 767.5px) {
     display: none;
@@ -17,18 +21,21 @@
   border: none;
   padding: 0;
   background-color: transparent;
+  width: min-content;
 }
 
 .toggle__state {
   box-sizing: border-box;
   display: inline-block;
-  width: 84px;
+  flex-grow: 1;
   height: 14px;
   border: 1px solid var(--special-dark-grey3, #cdcdcd);
   border-radius: 6px;
   background-color: var(--basic-white, #ffffff);
   padding: 3px 6px;
-  margin: 0 12px;
+  margin: 0 18px;
+  min-width: 84px;
+  max-width: 30%;
 }
 
 .toggle__switch {
