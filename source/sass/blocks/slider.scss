@@ -2,11 +2,12 @@
   max-width: 100%;
   width: 280px;
   height: 232px;
-  object-fit: contain;
+  object-fit: cover;
 
   @media (min-width: 768px) {
     width: 677px;
     height: 520px;
+    object-position: 0%;
   }
 }
 
@@ -14,11 +15,13 @@
   max-width: 100%;
   width: 251px;
   height: 240px;
-  object-fit: contain;
+  object-fit: cover;
 
   @media (min-width: 768px) {
+    display: block;
     width: 545px;
     height: 520px;
+    object-position: 92%;
   }
 }
 
@@ -27,10 +30,29 @@
 
   @media (min-width: 768px) {
     margin-bottom: 10px;
+    width: 677px;
+    height: 520px;
+    position: relative;
   }
 
   @media (min-width: 1280px) {
     align-self: flex-end;
     margin-bottom: 19px;
+  }
+}
+
+.slider__item-container {
+  @media (min-width: 768px) {
+    position: absolute;
+
+    &--before {
+      width: 50%;
+    }
+
+    &--after {
+      width: 50%;
+      right: 0;
+      z-index: -5;
+    }
   }
 }
