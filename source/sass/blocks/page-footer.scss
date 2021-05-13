@@ -25,27 +25,33 @@
 .page-footer__copy {
   font-family: var(--block-font-basic);
   font-size: 16px;
-  line-height: 18.4px;
+  line-height: normal;
   font-weight: 400;
   text-decoration: none;
   color: var(--special-dark-grey, #444444);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-width: 19ch;
 
   &::after {
     content: "";
     display: inline-block;
-    width: 38px;
-    height: 38px;
+    min-width: 38px;
+    min-height: 38px;
     background-color: var(--icon-grey, #666666);
     mask-image: url("../../img/stack.svg#htmlacademy");
     mask-repeat: no-repeat;
     margin-right: -6px;
 
     @media (min-width: 768px) {
-      margin-left: 22px;
+      // margin-left: 22px;
+      margin-right: 0;
     }
+  }
+
+  @media (min-width: 768px) {
+    margin-right: -5px;
   }
 
   &:hover::after {
@@ -75,6 +81,6 @@
 
   @media (min-width: 768px) {
     margin: 0;
-    margin-left: 35px;
+    margin-left: 33px;
   }
 }

@@ -5,7 +5,9 @@
   font-weight: 400;
   text-transform: uppercase;
   color: var(--special-dark-grey, #444444);
-  width: max-content;
+  // width: max-content;
+  word-break: break-word;
+  max-width: 30ch;
 
   &--color_a {
     color: var(--special-dark-grey2, #222222);

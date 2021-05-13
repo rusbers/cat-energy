@@ -118,21 +118,21 @@
   position: absolute;
   display: block;
   border: 0;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   background-color: transparent;
   background-repeat: no-repeat;
 
   &--open {
     background-image: url("../../img/stack.svg#close-menu");
     top: 21px;
-    right: 20px;
+    right: 22px;
   }
 
   &--close {
     background-image: url("../../img/stack.svg#burger-menu");
-    top: 22px;
-    right: 21px;
+    top: 21px;
+    right: 22px;
   }
 
   @media (min-width: 768px) {

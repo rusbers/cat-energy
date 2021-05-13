@@ -43,8 +43,10 @@
 
   &--form {
     @media (min-width: 768px) {
-      padding-right: 71px;
-      padding-left: 67px;
+      // padding-right: 71px;
+      // padding-left: 67px;
+      padding-right: 67px;
+      padding-left: 71px;
     }
 
     @media (min-width: 1280px) {
@@ -53,11 +55,17 @@
   }
 }
 
+.page__page-header {
+  @media (min-width: 1280px) {
+    margin-bottom: 28px;
+  }
+}
+
 .page__benefits {
-  margin-bottom: 42px;
+  margin-bottom: 39px;
 
   @media (min-width: 768px) {
-    margin-bottom: 60px;
+    margin-bottom: 14px;
   }
 
   @media (min-width: 1280px) {
@@ -81,7 +89,7 @@
   position: relative;
 
   @media (min-width: 768px) {
-    padding-bottom: 34px;
+    padding-bottom: 33px;
   }
 }
 
@@ -89,7 +97,7 @@
   margin-bottom: 22px;
 
   @media (min-width: 768px) {
-    margin-bottom: 0;
+    margin-bottom: -3px;
   }
 
   @media (min-width: 1280px) {

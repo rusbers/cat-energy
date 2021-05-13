@@ -8,6 +8,7 @@
   display: grid;
   grid-template-rows: repeat(3, max-content);
   padding-top: 13px;
+  align-items: center;
 
   @media (min-width: 768px) {
     grid-template-rows: auto max-content;
@@ -32,6 +33,7 @@
   margin-bottom: 13px;
 
   @media (min-width: 768px) {
+    padding-right: 10px;
     margin-bottom: 0;
   }
 }
@@ -56,6 +58,11 @@
   @media (min-width: 768px) {
     margin-right: 50px;
   }
+
+  @media (min-width: 1280px) {
+    margin-right: 0;
+    padding-right: 10px;
+  }
 }
 
 .additional-product__price {
@@ -73,7 +80,7 @@
 .additional-product__button {
   grid-column: 1/-1;
   grid-row: -1/-2;
-  padding: 10px 0 10px 0;
+  padding: 10px 5px;
 
   @media (min-width: 1280px) {
     grid-row: auto;

@@ -4,6 +4,7 @@
 
   @media (min-width: 1280px) {
     position: relative;
+    overflow: hidden;
   }
 }
 
@@ -20,7 +21,7 @@
 
   @media (min-width: 768px) {
     font-size: 20px;
-    line-height: calc(21 / 20);
+    line-height: calc(25 / 20);
   }
 
   @media (min-width: 1280px) {
@@ -68,7 +69,7 @@
   }
 
   @media (min-width: 768px) {
-    padding: 66px 70px 56px 70px;
+    padding: 63px 70px 60px 70px;
   }
 
   @media (min-width: 1280px) {

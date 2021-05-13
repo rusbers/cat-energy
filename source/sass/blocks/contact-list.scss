@@ -1,6 +1,11 @@
 .contact-list {
   display: grid;
   grid-template-rows: 1fr 1fr;
+  row-gap: 14px;
+
+  @media (min-width: 768px) {
+    row-gap: 20px;
+  }
 
   @media (min-width: 1280px) {
     grid-template-columns: 1fr 1fr;
@@ -11,20 +16,20 @@
 
 .contact-list__item {
   display: grid;
-  grid-template-columns: max-content 1fr;
+  grid-template-columns: auto 1fr;
   align-items: center;
-  margin-bottom: 14px;
+  // margin-bottom: 14px;
   column-gap: 10px;
 
   @media (min-width: 768px) {
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     column-gap: 23px;
   }
 }
 
-.contact-list__label {
-  white-space: nowrap;
-}
+// .contact-list__label {
+//   white-space: nowrap;
+// }
 
 .contact-list__field-wrapper {
   position: relative;

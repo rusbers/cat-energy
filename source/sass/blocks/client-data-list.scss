@@ -1,17 +1,26 @@
 .client-data-list {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, min-content);
+  row-gap: 13px;
+
+  @media (min-width: 768px) {
+    row-gap: 20px;
+  }
 }
 
 .client-data-list__item {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  margin-bottom: 13px;
+  // margin-bottom: 13px;
   gap: 15px;
 
+  // &:last-child {
+  //   margin-bottom: 0;
+  // }
+
   @media (min-width: 768px) {
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     gap: 25px;
   }
 
