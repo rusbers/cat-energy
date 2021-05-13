@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru" class="page">
 
 <head>
   <meta charset="UTF-8">
@@ -42,11 +42,13 @@
   <main class="page-main">
     <div class="page__wrapper page__wrapper--form">
       <h1 class="page-main__title title">Подбор программы</h1>
-      <p class="page-main__lead lead">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+      <div class="page-main__lead lead">
+        <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      </div>
     </div>
     <form class="form" action="https://echo.htmlacademy.ru" method="POST">
       <div class="page__wrapper page__wrapper--form form__top-layout">
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--grid_align">
           <legend class="visually-hidden">Данные кота</legend>
           <div class="form__client-data-list client-data-list">
             <div class="client-data-list__item">
@@ -69,19 +71,19 @@
             <li class="radio-list__item">
               <div class="choice">
                 <input class="visually-hidden option" type="radio" id="lose-weight" name="program-goal" value="lose-weight">
-                <label class="choice__label choice__label--radio label label--color_a" for="lose-weight">Похудение</label>
+                <label class="choice__label choice__label--radio label label--color_a" for="lose-weight"><span class="choice__label-text">Похудение</span></label>
               </div>
             </li>
             <li class="radio-list__item">
               <div class="choice">
                 <input class="visually-hidden option" type="radio" id="gain-weight" name="program-goal" value="gain-weight">
-                <label class="choice__label choice__label--radio label label--color_a" for="gain-weight">Набор массы</label>
+                <label class="choice__label choice__label--radio label label--color_a" for="gain-weight"><span class="choice__label-text">Набор массы</span></label>
               </div>
             </li>
             <li class="radio-list__item">
               <div class="radio choice">
                 <input class="visually-hidden option" type="radio" id="undefined" name="program-goal" value="undefined" checked disabled>
-                <label class="choice__label choice__label--radio label label--color_a" for="undefined">Не знаю (Нужен ваш совет)</label>
+                <label class="choice__label choice__label--radio label label--color_a" for="undefined"><span class="choice__label-text">Не знаю (Нужен ваш совет)</span></label>
               </div>
             </li>
           </ul>
@@ -128,26 +130,26 @@
               <li class="checkbox-list__item">
                 <div class="choice">
                   <input class="visually-hidden option" type="checkbox" id="sweetener" name="optional-add" value="sweetener" checked disabled>
-                  <label class="choice__label choice__label--checkbox label label--color_b" for="sweetener">Cахарозаменитель</label>
+                  <label class="choice__label choice__label--checkbox label label--color_b" for="sweetener"><span class="choice__label-text">Cахарозаменитель</span></label>
                 </div>
               </li>
               <li class="checkbox-list__item">
                 <div class="choice">
                   <input class="visually-hidden option" type="checkbox" id="water" name="optional-add"
                     value="water">
-                  <label class="choice__label choice__label--checkbox label label--color_b" for="water">Питьевая вода</label>
+                  <label class="choice__label choice__label--checkbox label label--color_b" for="water"><span class="choice__label-text">Питьевая вода</span></label>
                 </div>
               </li>
               <li class="checkbox-list__item">
                 <div class="choice">
                   <input class="visually-hidden option" type="checkbox" id="milk" name="optional-add" value="milk">
-                  <label class="choice__label choice__label--checkbox label label--color_b" for="milk">Молоко</label>
+                  <label class="choice__label choice__label--checkbox label label--color_b" for="milk"><span class="choice__label-text">Молоко</span></label>
                 </div>
               </li>
               <li class="checkbox-list__item">
                 <div class="choice">
                   <input class="visually-hidden option" type="checkbox" id="vitamins" name="optional-add" value="vitamins">
-                  <label class="choice__label choice__label--checkbox label label--color_b" for="vitamins">Витамины</label>
+                  <label class="choice__label choice__label--checkbox label label--color_b" for="vitamins"><span class="choice__label-text">Витамины</span></label>
                 </div>
               </li>
             </ul>
@@ -164,14 +166,16 @@
     <section class="address">
       <h2 class="visually-hidden">Как нас найти</h2>
       <div class="page__wrapper address__top-wrapper address__top-wrapper--background">
-        <p class="address__slogan">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+        <div class="address__slogan">
+          <p>приглашаем к&nbsp;сотрудничеству дилеров!</p>
+        </div>
         <div class="address__place">
-          <p class="address__place-street">
-            ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8
-          </p>
-          <p class="address__place-city">
-            Санкт-Петербург
-          </p>
+          <div class="address__place-street">
+            <p>ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8</p>
+          </div>
+          <div class="address__place-city">
+            <p>Санкт-Петербург</p>
+          </div>
         </div>
       </div>
       <div class="address__bottom-wrapper">
@@ -195,7 +199,7 @@
               <span class="visually-hidden">Перейти на нашу страницу в Вконтакте</span>
             </a>
           </li>
-          <li class="social-list__item social-list__item--ident">
+          <li class="social-list__item">
             <a class="social-list__link social-list__link--instagram" href="#">
               <span class="visually-hidden">Перейти на нашу страницу в Инстаграме</span>
             </a>

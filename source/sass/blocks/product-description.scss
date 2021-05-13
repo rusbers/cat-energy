@@ -22,6 +22,7 @@
 .product-description__row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   @media (min-width: 768px) {
     border-bottom: 1px solid var(--special-dark-grey3, #cdcdcd);

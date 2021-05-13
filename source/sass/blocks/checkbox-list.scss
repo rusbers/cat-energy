@@ -1,12 +1,14 @@
 .checkbox-list {
   list-style: none;
   padding: 0;
+  display: grid;
+  row-gap: 13px;
 
   @media (min-width: 768px) {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 60px;
+    row-gap: 32px;
   }
 
   @media (min-width: 1280px) {
@@ -16,10 +18,10 @@
   }
 }
 
-.checkbox-list__item {
-  margin-bottom: 13px;
+// .checkbox-list__item {
+//   margin-bottom: 13px;
 
-  @media (min-width: 768px) {
-    margin-bottom: 32px;
-  }
-}
+//   @media (min-width: 768px) {
+//     margin-bottom: 32px;
+//   }
+// }

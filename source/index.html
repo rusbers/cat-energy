@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
-    <header class="page__wrapper page-header page-header__inner">
+    <header class="page__wrapper page__page-header page-header">
       <a class="page-header__logo logo">
         <picture>
           <source media="(min-width: 1280px)" srcset="img/header/logo-desktop.svg">
@@ -43,7 +43,9 @@
         <h2 class="visually-hidden">Подобрать программу питания для котов</h2>
         <div class="page__wrapper promo__inner">
           <p class="promo__title title title--color">Функциональное питание для котов</p>
-          <p class="promo__slogan">Занялся собой? Займись котом!</p>
+          <div class="promo__slogan">
+            <p>Занялся собой? Займись котом!</p>
+          </div>
           <a class="promo__button button" href="form.html">Подобрать программу</a>
           <div class="promo__image-wrapper">
             <picture>
@@ -62,12 +64,16 @@
         <ul class="product-categories__list">
           <li class="product-categories__item product-categories__item--has_icon product-categories__item--icon_a"> <!-- модификатор для добавления соотв. декор. картинки через pseudo element -->
               <h3 class="product-categories__title">Похудение</h3>
-              <p class="product-categories__text text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <div class="product-categories__text text">
+                <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              </div>
               <a class="product-categories__link" href="#" aria-label="Нажмите чтобы перейти на страницу каталога">Каталог slim</a>
           </li>
           <li class="product-categories__item product-categories__item--has_icon product-categories__item--icon_b"> <!-- модификатор для добавления соотв. декор. картинки через pseudo element -->
             <h3 class="product-categories__title">Набор массы</h3>
-            <p class="product-categories__text text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <div class="product-categories__text text">
+              <p>Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            </div>
             <a class="product-categories__link" href="#" aria-label="Нажмите чтобы перейти на страницу каталога">каталог pro</a>
           </li>
         </ul>
@@ -77,16 +83,32 @@
         <p class="benefits__title title title--line-height">Как это работает</p>
         <ul class="benefits__list">
           <li class="benefits__item benefits__item--has_digit benefits__item--number_1">
-            <p class="benefits__text benefits__text--has_icon benefits__text--icon_a text">Функциональное питание содержит только полезные питательные вещества.</p>
+            <div class="benefits__text benefits__text--has_icon benefits__text--icon_a text">
+              <div class="content">
+                <p>Функциональное питание содержит только полезные питательные вещества.</p>
+              </div>
+            </div>
           </li>
           <li class="benefits__item benefits__item--has_digit benefits__item--number_2">
-            <p class="benefits__text benefits__text--has_icon benefits__text--icon_b text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+            <div class="benefits__text benefits__text--has_icon benefits__text--icon_b text">
+              <div class="content">
+                <p>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+              </div>
+            </div>
           </li>
           <li class="benefits__item benefits__item--has_digit benefits__item--number_3">
-            <p class="benefits__text benefits__text--has_icon benefits__text--icon_c text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+            <div class="benefits__text benefits__text--has_icon benefits__text--icon_c text">
+              <div class="content">
+                <p>Замените один-два приема обычной еды на наше функциональное питание.</p>
+              </div>
+            </div>
           </li>
           <li class="benefits__item benefits__item--has_digit benefits__item--number_4">
-            <p class="benefits__text benefits__text--has_icon benefits__text--icon_d text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <div class="benefits__text benefits__text--has_icon benefits__text--icon_d text">
+              <div class="content">
+                <p>Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
@@ -94,7 +116,9 @@
         <div class="page__wrapper result-example__inner">
           <h2 class="visually-hidden">Эффект применения диеты построенной на наших продуктах</h2>
           <p class="result-example__title title title--line-height">Живой пример</p>
-          <p class="result-example__text text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <div class="result-example__text text">
+            <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          </div>
           <dl class="result-example__statistics-list statistics-list">
             <div class="statistics-list__item statistics-list__item--has_border">
               <dt class="statistics-list__title statistics-list__title--position">снижение веса</dt>
@@ -152,14 +176,16 @@
       <section class="address">
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="page__wrapper address__top-wrapper">
-          <p class="address__slogan">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <div class="address__slogan">
+            <p>приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          </div>
           <div class="address__place">
-            <p class="address__place-street">
-              ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8
-            </p>
-            <p class="address__place-city">
-              Санкт-Петербург
-            </p>
+            <div class="address__place-street">
+              <p>ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8</p>
+            </div>
+            <div class="address__place-city">
+              <p>Санкт-Петербург</p>
+            </div>
           </div>
         </div>
         <div class="address__bottom-wrapper">
@@ -183,7 +209,7 @@
                 <span class="visually-hidden">Перейти на нашу страницу в Вконтакте</span>
               </a>
             </li>
-            <li class="social-list__item social-list__item--ident">
+            <li class="social-list__item">
               <a class="social-list__link social-list__link--instagram" href="#">
                 <span class="visually-hidden">Перейти на нашу страницу в Инстаграме</span>
               </a>
