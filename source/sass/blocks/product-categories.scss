@@ -102,7 +102,7 @@
 .product-categories__title {
   font-family: var(--block-font-special);
   font-size: 24px;
-  line-height: 37px;
+  line-height: calc(37 / 24);
   font-weight: 400;
   color: var(--basic-black, #000000);
   text-transform: uppercase;

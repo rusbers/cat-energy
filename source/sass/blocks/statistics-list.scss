@@ -80,7 +80,7 @@
 .statistics-list__title {
   font-family: var(--block-font-basic);
   font-size: 12px;
-  line-height: 12px;
+  line-height: 1;
   font-weight: 400;
   color: var(--special-dark-grey, #444444);
   order: 2;
@@ -111,7 +111,7 @@
 .statistics-list__sum-title {
   font-family: var(--block-font-special);
   font-size: 14px;
-  line-height: 20px;
+  line-height: calc(20 / 14);
   color: var(--basic-black, #000000);
   text-transform: uppercase;
   order: initial;

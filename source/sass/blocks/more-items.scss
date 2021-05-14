@@ -33,7 +33,7 @@
 
 .more-items__title {
   font-size: 16px;
-  line-height: 20px;
+  line-height: calc(20 / 16);
   font-weight: 400;
   color: var(--special-dark-grey4, #111111);
   text-transform: uppercase;

@@ -2,7 +2,7 @@
   --block-font-special: var(--oswald, "Tahoma", sans-serif);
   font-family: var(--block-font-special);
   font-size: 14px;
-  line-height: 18px;
+  line-height: calc(18 / 14);
   font-weight: 400;
   text-transform: uppercase;
   color: var(--basic-black, #000000);

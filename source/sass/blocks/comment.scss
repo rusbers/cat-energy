@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: var(--block-font-special);
   font-size: 16px;
-  line-height: 18px;
+  line-height: calc(18 / 16);
   font-weight: 400;
   text-transform: uppercase;
   color: var(--special-dark-grey, #444444);
