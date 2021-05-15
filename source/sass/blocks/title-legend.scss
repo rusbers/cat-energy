@@ -8,11 +8,14 @@
   background-color: var(--basic-white, #ffffff);
   max-width: max-content;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 14px;
 
   @media (min-width: 768px) {
     font-size: 36px;
     line-height: 1;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -42px;
   }
 
   &--line-height {

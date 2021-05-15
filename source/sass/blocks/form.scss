@@ -1,7 +1,7 @@
 .form {
   --block-font-special: var(--oswald, "Tahoma", sans-serif);
   --block-font-basic: var(--arial, sans-serif);
-  padding-bottom: 32px;
+  padding-bottom: 31px;
 
   @media (min-width: 768px) {
     padding-bottom: 72px;
@@ -38,13 +38,13 @@
 
 .form__radio-list {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
   margin-right: -20px;
   margin-left: -20px;
 
   @media (min-width: 768px) {
     margin: 0;
-    margin-bottom: 80px;
+    margin-bottom: 75px;
   }
 
   @media (min-width: 1280px) {
@@ -54,24 +54,23 @@
 
 .form__checkbox-list {
   margin: 0;
-  margin-bottom: 40px;
-  margin-top: 7px;
+  margin-bottom: 35px;
 
   @media (min-width: 768px) {
-    margin-top: 10px;
-    margin-bottom: 13px;
+    margin-top: -6px;
+    margin-bottom: 54px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1280px) {
     margin-bottom: 19px;
   }
 }
 
 .form__contact-list {
-  margin-bottom: 11px;
+  margin-bottom: 23px;
 
   @media (min-width: 768px) {
-    margin-bottom: 52px;
+    margin-bottom: 65px;
   }
 }
 
@@ -82,7 +81,11 @@
 
   @media (min-width: 768px) {
     margin-top: -1px;
-    margin-bottom: 68px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 67px;
   }
 }
 
@@ -97,12 +100,10 @@
     font-size: 20px;
     line-height: 1;
     padding: 16px 5px;
-    margin-left: 4px;
   }
 
   @media (min-width: 1280px) {
     width: 568px;
-    margin-left: 0;
   }
 }
 
@@ -111,7 +112,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-    margin-bottom: 75px;
+    margin-bottom: 70px;
   }
 }
 
@@ -121,27 +122,34 @@
 
   @media (min-width: 768px) {
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: min-content max-content;
     align-items: center;
-    column-gap: 63px;
+    column-gap: 61px;
   }
 
   @media (min-width: 1280px) {
     column-gap: 80px;
+    margin-top: 41px;
   }
 }
 
 .form__title-legend {
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   margin-left: -20px;
 
   @media (min-width: 768px) {
-    margin-bottom: 82px;
+    margin-bottom: 74px;
   }
 
   &--margin_bottom {
     @media (min-width: 768px) {
       margin-bottom: 62px;
     }
+  }
+}
+
+.form__legend {
+  @media (min-width: 768px) {
+    margin-top: -5px;
   }
 }
