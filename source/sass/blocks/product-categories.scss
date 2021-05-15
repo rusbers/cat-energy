@@ -18,7 +18,7 @@
 
 .product-categories__item {
   background-color: var(--basic-grey, #f2f2f2);
-  padding: 21px 20px 18px 20px;
+  padding: 21px 20px 13px;
   margin-bottom: 20px;
 
   &:last-child {
@@ -35,7 +35,7 @@
 
   @media (min-width: 1280px) {
     padding-top: 77px;
-    padding-bottom: 59px;
+    padding-bottom: 41px;
     margin-bottom: 0;
     // display: grid;
     grid-template-columns: min-content 1fr;
@@ -74,7 +74,7 @@
         // float: left;
         margin-left: -20px;
         margin-top: -50px;
-        margin-right: 52px;
+        margin-right: 42px;
         grid-row: 1/2;
         grid-column: 1/2;
         align-self: initial;
@@ -117,7 +117,7 @@
   }
 
   @media (min-width: 1280px) {
-    margin-bottom: 73px;
+    margin-bottom: 58px;
     margin-top: 0;
     grid-row: 1/2;
     grid-column: 2/3;
@@ -134,6 +134,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: var(--basic-black, #000000);
+  padding-top: 10px;
 
   @media (min-width: 768px) {
     font-size: 20px;
@@ -162,6 +163,10 @@
       mask-position: -7px;
       margin-left: 25px;
     }
+
+    @media (min-width: 1280px) {
+      mask-position: -4px;
+    }
   }
 
   &:active {
@@ -176,7 +181,7 @@
 .product-categories__text {
   padding-bottom: 8px;
   border-bottom: 1px solid var(--special-white, #d9d9d9);
-  margin-bottom: 15px;
+  // margin-bottom: 11px;
 
   @media (min-width: 768px) {
     padding-bottom: 0;
@@ -184,7 +189,7 @@
   }
 
   @media (min-width: 1280px) {
-    margin-bottom: 28px;
+    margin-bottom: 0;
     grid-column: 1/-1;
     grid-row: 2/3;
   }

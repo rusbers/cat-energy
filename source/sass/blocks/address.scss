@@ -15,7 +15,7 @@
   font-weight: 400;
   color: var(--basic-black, #000000);
   text-transform: uppercase;
-  padding-right: 15px;
+  // padding-right: 15px;
   margin: 0;
   width: min-content;
 
@@ -25,7 +25,7 @@
   }
 
   @media (min-width: 1280px) {
-    padding-right: 87px;
+    padding-right: 96px;
   }
 }
 
@@ -39,7 +39,11 @@
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: calc(20 / 16);
-    text-align: right;
+    text-align: end;
+  }
+
+  @media (min-width: 1280px) {
+    text-align: start;
   }
 }
 
@@ -58,8 +62,8 @@
 }
 
 .address__top-wrapper {
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 17px;
+  padding-bottom: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,17 +73,14 @@
   }
 
   @media (min-width: 768px) {
-    padding: 63px 70px 60px 70px;
+    padding: 44px 70px 42px;
   }
 
   @media (min-width: 1280px) {
     position: absolute;
     background-color: var(--basic-white, #ffffff);
     width: auto;
-    padding-top: 66px;
-    padding-bottom: 51px;
-    padding-left: 76px;
-    padding-right: 89px;
+    padding: 46px 90px 40px 76px;
     margin-left: 110px;
     top: 95px;
     z-index: 5;

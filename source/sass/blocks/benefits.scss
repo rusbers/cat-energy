@@ -35,7 +35,7 @@
 
 .benefits__item {
   --block-font-special: var(--oswald, "Tahoma", sans-serif);
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 
   &:last-child {
     margin-bottom: 0;
@@ -57,21 +57,37 @@
       top: 0;
       right: 34px;
       z-index: -4;
+
+      @media (min-width: 1280px) {
+        right: 14px;
+      }
     }
 
     &--number_2::before {
       content: "2";
       right: 17px;
+
+      @media (min-width: 1280px) {
+        right: 0;
+      }
     }
 
     &--number_3::before {
       content: "3";
       right: 13px;
+
+      @media (min-width: 1280px) {
+        right: -2px;
+      }
     }
 
     &--number_4::before {
       content: "4";
       right: 14px;
+
+      @media (min-width: 1280px) {
+        right: -3px;
+      }
     }
   }
 }

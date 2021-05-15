@@ -64,6 +64,11 @@
 .slider__range {
   display: flex;
   align-items: center;
+
+  @media (min-width: 1280px) {
+    margin-left: 52px;
+    margin-bottom: -5px;
+  }
 }
 
 .range {
