@@ -2,7 +2,7 @@
   list-style: none;
   padding: 0;
   display: grid;
-  row-gap: 13px;
+  row-gap: 12px;
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
@@ -14,7 +14,7 @@
   @media (min-width: 1280px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    column-gap: 71px;
+    column-gap: 79px;
   }
 }
 

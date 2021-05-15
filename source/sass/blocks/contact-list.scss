@@ -23,7 +23,7 @@
 
   @media (min-width: 768px) {
     // margin-bottom: 20px;
-    column-gap: 23px;
+    column-gap: 15px;
   }
 }
 
@@ -45,19 +45,42 @@
     mask-repeat: no-repeat;
     width: 20px;
     height: 20px;
-    top: 12px;
-    right: 15px;
+    top: 13px;
+    right: 13px;
+
+    @media (min-width: 768px) {
+      top: 16px;
+      right: 16px;
+    }
   }
 
   &--a::after {
     mask-image: url("../../img/stack.svg#mail");
+    top: 13px;
+    right: 15px;
+
+    @media (min-width: 768px) {
+      top: 16px;
+      right: 16px;
+    }
   }
 
   &--b::after {
     mask-image: url("../../img/stack.svg#telephone");
+    top: 12px;
+    right: 13px;
+
+    @media (min-width: 768px) {
+      top: 16px;
+      right: 16px;
+    }
   }
 }
 
 .contact-list__field {
   padding: 10px 40px 10px 13px;
+
+  @media (min-width: 768px) {
+    padding-left: 20px;
+  }
 }
