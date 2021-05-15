@@ -19,12 +19,10 @@
   font-weight: 400;
   color: var(--special-dark-grey2, #222222);
   margin: 0;
-  margin-bottom: 15px;
 
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: calc(24 / 20);
-    margin-bottom: 0;
   }
 
   &--line-height {

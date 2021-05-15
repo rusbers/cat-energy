@@ -7,7 +7,7 @@
   color: var(--special-dark-grey, #222222);
   display: grid;
   grid-template-rows: repeat(3, max-content);
-  padding-top: 13px;
+  padding-top: 16px;
   align-items: center;
 
   @media (min-width: 768px) {
