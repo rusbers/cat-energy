@@ -1,8 +1,8 @@
 .product {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  // grid-template-rows: 1fr 1fr max-content;
-  grid-template-rows: 1fr repeat(2, max-content);
+  grid-template-rows: 1fr 1fr max-content;
+  // grid-template-rows: 1fr repeat(2, max-content);
   padding-top: 19px;
 
   @media (min-width: 768px) {
@@ -19,6 +19,7 @@
 .product__product-link {
   grid-column: 2/3;
   grid-row: 1/2;
+  margin-bottom: 15px;
 
   @media (min-width: 768px) {
     grid-row: 2/3;
