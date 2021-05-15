@@ -26,7 +26,7 @@
 }
 
 .slider__items {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 
   @media (min-width: 768px) {
     margin-bottom: 14px;
@@ -36,8 +36,9 @@
   }
 
   @media (min-width: 1280px) {
-    align-self: flex-end;
-    margin-bottom: 19px;
+    // align-self: flex-end;
+    margin-bottom: 30px;
+    margin-left: -3px;
   }
 }
 
@@ -47,6 +48,10 @@
 
     &--before {
       width: 50%;
+
+      @media (min-width: 1280px) {
+        width: 54%;
+      }
     }
 
     &--after {

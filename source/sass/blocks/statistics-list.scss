@@ -16,7 +16,7 @@
   @media (min-width: 1280px) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, max-content);
-    margin-right: 70px;
+    max-width: 64%;
   }
 }
 

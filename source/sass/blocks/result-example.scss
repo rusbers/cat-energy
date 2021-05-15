@@ -13,7 +13,7 @@
       }
 
       @media (min-width: 1280px) {
-        background: linear-gradient(transparent 25%, var(--special-grey-bg, #eaeaea) 25%);
+        background: linear-gradient(transparent 26.5%, var(--special-grey-bg, #eaeaea) 26.5%);
       }
     }
   }
@@ -23,10 +23,10 @@
   display: grid;
   grid-template-rows: max-content max-content max-content auto;
   padding-top: 27px;
-  padding-bottom: 36px;
+  padding-bottom: 35px;
 
   @media (min-width: 1280px) {
-    grid-template-columns: 36% 1fr;
+    grid-template-columns: 47% 1fr;
     grid-template-rows: max-content max-content max-content;
   }
 }
@@ -43,7 +43,7 @@
   @media (min-width: 1280px) {
     grid-column: 1/-1;
     max-width: 760px;
-    margin-bottom: 130px;
+    margin-bottom: 126px;
   }
 }
 
@@ -58,7 +58,9 @@
   }
 
   @media (min-width: 1280px) {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
+    padding-right: 0;
+    max-width: 76%;
   }
 }
 
@@ -85,5 +87,6 @@
   @media (min-width: 1280px) {
     grid-column: 2/3;
     grid-row: 1/-1;
+    margin-top: -54px;
   }
 }
