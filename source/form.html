@@ -28,10 +28,10 @@
       <button class="main-navigation__toggle main-navigation__toggle--open"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-navigation__list">
         <li class="main-navigation__item">
-          <a class="main-navigation__link" href="index.html">Главная</a>
+          <a class="main-navigation__link" href="index.html" aria-label="Перейти на главную страницу">Главная</a>
         </li>
         <li class="main-navigation__item">
-          <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
+          <a class="main-navigation__link" href="catalog.html" aria-label="Перейти на страницу каталога">Каталог продукции</a>
         </li>
         <li class="main-navigation__item main-navigation__item--current">
           <a class="main-navigation__link">Подбор программы</a>
@@ -52,15 +52,15 @@
           <legend class="visually-hidden">Данные кота</legend>
           <div class="form__client-data-list client-data-list">
             <div class="client-data-list__item">
-              <label class="client-data-list__label label" for="cat-name">Имя:<span aria-hidden="true">*</span></label>
+              <label class="client-data-list__label label" for="cat-name" aria-label="Введите имя кота, обязательное поле">Имя:<span aria-hidden="true">*</span></label>
               <input class="client-data-list__field field" type="text" id="cat-name" name="cat-name" placeholder="Барсик">
             </div>
             <div class="client-data-list__item">
-              <label class="client-data-list__label label" for="cat-weight">Вес (кг):<span aria-hidden="true">*</span></label>
+              <label class="client-data-list__label label" for="cat-weight" aria-label="Введите вес кота, обязательное поле">Вес (кг):<span aria-hidden="true">*</span></label>
               <input class="client-data-list__field field" type="text" id="cat-weight" name="cat-weight" pattern="[0-9]{1,2}" placeholder="7">
             </div>
             <div class="client-data-list__item">
-              <label class="client-data-list__label label" for="cat-age">Возраст (лет):</label>
+              <label class="client-data-list__label label" for="cat-age" aria-label="Введите возраст кота">Возраст (лет):</label>
               <input class="client-data-list__field field" type="text" id="cat-age" name="cat-age" pattern="[0-9]{1,2}" placeholder="7">
             </div>
           </div>
@@ -71,19 +71,19 @@
             <li class="radio-list__item">
               <div class="choice">
                 <input class="visually-hidden option" type="radio" id="lose-weight" name="program-goal" value="lose-weight">
-                <label class="choice__label choice__label--radio label label--color_a" for="lose-weight"><span class="choice__label-text">Похудение</span></label>
+                <label class="choice__label choice__label--radio label label--color_a" for="lose-weight" aria-label="Нужна диета для похудения"><span class="choice__label-text">Похудение</span></label>
               </div>
             </li>
             <li class="radio-list__item">
               <div class="choice">
                 <input class="visually-hidden option" type="radio" id="gain-weight" name="program-goal" value="gain-weight">
-                <label class="choice__label choice__label--radio label label--color_a" for="gain-weight"><span class="choice__label-text">Набор массы</span></label>
+                <label class="choice__label choice__label--radio label label--color_a" for="gain-weight" aria-label="Нужна диета для набора массы"><span class="choice__label-text">Набор массы</span></label>
               </div>
             </li>
             <li class="radio-list__item">
               <div class="radio choice">
                 <input class="visually-hidden option" type="radio" id="undefined" name="program-goal" value="undefined" checked>
-                <label class="choice__label choice__label--radio label label--color_a" for="undefined"><span class="choice__label-text">Не знаю (Нужен ваш совет)</span></label>
+                <label class="choice__label choice__label--radio label label--color_a" for="undefined" aria-label="Не знаю какой корм выбрать, нужен совет"><span class="choice__label-text">Не знаю (Нужен ваш совет)</span></label>
               </div>
             </li>
           </ul>
@@ -95,14 +95,14 @@
             <legend class="form__title-legend title-legend title-legend--width title-legend--line-height">Контактные данные (владельца кота)</legend>
             <div class="form__contact-list contact-list">
               <div class="contact-list__item">
-                <label class="contact-list__label label" for="email">E-mail:<span aria-hidden="true">*</span></label>
+                <label class="contact-list__label label" for="email" aria-label="Введите вашу электронную почту, обязательное после">E-mail:<span aria-hidden="true">*</span></label>
                 <div class="contact-list__field-wrapper">
                   <input class="contact-list__field field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
                   <span class="contact-list__icon contact-list__icon--a"></span>
                 </div>
               </div>
               <div class="contact-list__item">
-                <label class="contact-list__label label" for="phone-number">Телефон:<span aria-hidden="true">*</span></label>
+                <label class="contact-list__label label" for="phone-number" aria-label="Введите ваш номер телефона, обязательное поле">Телефон:<span aria-hidden="true">*</span></label>
                 <div class="contact-list__field-wrapper">
                   <input class="contact-list__field field" type="tel" id="phone-number" name="phone-number" pattern="[0-9]{1,11}" placeholder="8 (960) 900-60-90">
                   <span class="contact-list__icon contact-list__icon--b"></span>
@@ -130,26 +130,26 @@
               <li class="checkbox-list__item">
                 <div class="choice">
                   <input class="visually-hidden option" type="checkbox" id="sweetener" name="optional-add" value="sweetener">
-                  <label class="choice__label choice__label--checkbox label label--color_b" for="sweetener"><span class="choice__label-text">Cахарозаменитель</span></label>
+                  <label class="choice__label choice__label--checkbox label label--color_b" for="sweetener" aria-label="Купить дополнительно сахарозаменитель"><span class="choice__label-text">Cахарозаменитель</span></label>
                 </div>
               </li>
               <li class="checkbox-list__item">
                 <div class="choice">
                   <input class="visually-hidden option" type="checkbox" id="water" name="optional-add"
                     value="water">
-                  <label class="choice__label choice__label--checkbox label label--color_b" for="water"><span class="choice__label-text">Питьевая вода</span></label>
+                  <label class="choice__label choice__label--checkbox label label--color_b" for="water" aria-label="Купить дополнительно воду"><span class="choice__label-text">Питьевая вода</span></label>
                 </div>
               </li>
               <li class="checkbox-list__item">
                 <div class="choice">
                   <input class="visually-hidden option" type="checkbox" id="milk" name="optional-add" value="milk">
-                  <label class="choice__label choice__label--checkbox label label--color_b" for="milk"><span class="choice__label-text">Молоко</span></label>
+                  <label class="choice__label choice__label--checkbox label label--color_b" for="milk" aria-label="Купить дополнительно молоко"><span class="choice__label-text">Молоко</span></label>
                 </div>
               </li>
               <li class="checkbox-list__item">
                 <div class="choice">
                   <input class="visually-hidden option" type="checkbox" id="vitamins" name="optional-add" value="vitamins">
-                  <label class="choice__label choice__label--checkbox label label--color_b" for="vitamins"><span class="choice__label-text">Витамины</span></label>
+                  <label class="choice__label choice__label--checkbox label label--color_b" for="vitamins" aria-label="Купить дополнительно витамины"><span class="choice__label-text">Витамины</span></label>
                 </div>
               </li>
             </ul>
@@ -157,7 +157,7 @@
         </div>
       </div>
       <div class="page__wrapper page__wrapper--form form__bottom-layout">
-        <button class="form__button button" type="submit">Отправить заявку</button>
+        <button class="form__button button" type="submit" aria-label="Нажмите чтобы отправить заявку">Отправить заявку</button>
         <small class="form__legend legend"><span aria-hidden="true">*</span> &mdash; Обязательные поля</small>
       </div>
     </form>
@@ -206,7 +206,7 @@
             </a>
           </li>
         </ul>
-        <a class="page-footer__copy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="page-footer__copy" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Авторские права принадлежат HTML Академии">HTML Academy</a>
       </div>
     </div>
   </footer>
