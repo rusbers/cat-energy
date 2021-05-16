@@ -116,7 +116,7 @@
 
 .main-navigation__toggle {
   position: absolute;
-  display: block;
+  // display: block;
   border: 0;
   width: 20px;
   height: 20px;
@@ -131,8 +131,10 @@
 
   &--close {
     background-image: url("../../img/stack.svg#burger-menu");
-    top: 21px;
-    right: 22px;
+    top: 20px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
   }
 
   @media (min-width: 768px) {
