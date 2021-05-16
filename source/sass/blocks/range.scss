@@ -61,16 +61,6 @@
   margin: 0 auto;
 }
 
-.slider__range {
-  display: flex;
-  align-items: center;
-
-  @media (min-width: 1280px) {
-    margin-left: 52px;
-    margin-bottom: -5px;
-  }
-}
-
 .range {
   --block-font-special: var(--oswald, "Tahoma", sans-serif);
 
