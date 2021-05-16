@@ -1,3 +1,10 @@
+.main-products {
+  @media (max-width: 767.9px) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 .main-products__products-list {
   margin: 0;
 }
