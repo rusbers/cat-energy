@@ -1,5 +1,5 @@
 .comment {
-  --block-font-special: var(--oswald, "Tahoma", sans-serif);
+  --block-font-special: var(--oswald), "Tahoma", sans-serif;
   resize: none;
   box-sizing: border-box;
   font-family: var(--block-font-special);

@@ -62,7 +62,7 @@
 }
 
 .range {
-  --block-font-special: var(--oswald, "Tahoma", sans-serif);
+  --block-font-special: var(--oswald), "Tahoma", sans-serif;
 
   @media (max-width: 767.9px) {
     display: none;

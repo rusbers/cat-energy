@@ -1,5 +1,5 @@
 .page {
-  --main-font-set: var(--oswald, "Tahoma", sans-serif);
+  --main-font-set: var(--oswald), "Tahoma", sans-serif;
   --scrollbar-size: calc(100vw - 100%);
   --content-indent: 20px;
   font-family: var(--main-font-set);

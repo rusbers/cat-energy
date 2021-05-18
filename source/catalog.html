@@ -25,7 +25,7 @@
         <img class="logo__text" src="img/header/logo-text.svg" width="101" height="18" alt="Название магазина в виде логотипа — «Cat Energy»">
       </a>
       <nav class="main-navigation">
-        <button class="main-navigation__toggle main-navigation__toggle--open"><span class="visually-hidden">Открыть меню</span></button> <!-- .main-navigation__toggle--open; .main-navigation__toggle--close -->
+        <button class="main-navigation__toggle main-navigation__toggle--open" hidden><span class="visually-hidden">Открыть меню</span></button> <!-- .main-navigation__toggle--open; .main-navigation__toggle--close -->
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
             <a class="main-navigation__link" href="index.html" aria-label="Перейти на главную страницу">Главная</a>
@@ -346,13 +346,15 @@
     <footer class="page-footer">
       <section class="address">
         <h2 class="visually-hidden">Как нас найти</h2>
-        <div class="page__wrapper address__top-wrapper address__top-wrapper--background">
-          <div class="address__slogan">
-            <p>приглашаем к&nbsp;сотрудничеству дилеров!</p>
-          </div>
-          <div class="address__place">
-            <p class="address__place-street">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8</p>
-            <p class="address__place-city">Санкт-Петербург</p>
+        <div class="page__wrapper address__top-wrapper">
+          <div class="address__info address__info--background">
+            <div class="address__slogan">
+              <p>приглашаем к&nbsp;сотрудничеству дилеров!</p>
+            </div>
+            <div class="address__place">
+              <p class="address__place-street">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8</p>
+              <p class="address__place-city">Санкт-Петербург</p>
+            </div>
           </div>
         </div>
         <div class="address__bottom-wrapper">

@@ -1,5 +1,5 @@
 .main-navigation {
-  --block-font-special: var(--oswald, "Tahoma", sans-serif);
+  --block-font-special: var(--oswald), "Tahoma", sans-serif;
   // flex-grow: 1;
 
   @media (min-width: 1280px) {

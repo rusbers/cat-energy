@@ -1,5 +1,5 @@
 .toggle {
-  --block-font-special: var(--oswald, "Tahoma", sans-serif);
+  --block-font-special: var(--oswald), "Tahoma", sans-serif;
   justify-self: center;
   display: flex;
   align-items: center;

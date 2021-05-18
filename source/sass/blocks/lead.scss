@@ -1,5 +1,5 @@
 .lead {
-  --block-font-special: var(--oswald, "Tahoma", sans-serif);
+  --block-font-special: var(--oswald), "Tahoma", sans-serif;
   font-family: var(--block-font-special);
   font-size: 14px;
   line-height: calc(18 / 14);

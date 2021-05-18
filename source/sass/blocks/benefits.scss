@@ -34,7 +34,7 @@
 }
 
 .benefits__item {
-  --block-font-special: var(--oswald, "Tahoma", sans-serif);
+  --block-font-special: var(--oswald), "Tahoma", sans-serif;
   margin-bottom: 12px;
 
   &:last-child {

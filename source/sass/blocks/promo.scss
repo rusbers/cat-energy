@@ -1,5 +1,5 @@
 .promo {
-  --block-font-special: var(--oswald, "Tahoma", sans-serif);
+  --block-font-special: var(--oswald), "Tahoma", sans-serif;
   // --block-bg: rgba(var(--rgb-basic-green, 104, 183, 56), 0.85); /* Убрал кастомное свойство, чтобы градиент сработал на iOS */
 
   &--has_background {

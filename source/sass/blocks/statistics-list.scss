@@ -1,6 +1,6 @@
 .statistics-list {
-  --block-font-special: var(--oswald, "Tahoma", sans-serif);
-  --block-font-basic: var(--arial, sans-serif);
+  --block-font-special: var(--oswald), "Tahoma", sans-serif;
+  --block-font-basic: var(--arial), sans-serif;
   display: grid;
   grid-template-columns: repeat(2, 124px);
   grid-template-rows: 1fr 1fr;

@@ -1,6 +1,6 @@
 .form {
-  --block-font-special: var(--oswald, "Tahoma", sans-serif);
-  --block-font-basic: var(--arial, sans-serif);
+  --block-font-special: var(--oswald), "Tahoma", sans-serif;
+  --block-font-basic: var(--arial), sans-serif;
   padding-bottom: 31px;
 
   @media (min-width: 768px) {

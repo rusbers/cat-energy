@@ -1,5 +1,5 @@
 .product-description {
-  --block-font-basic: var(--arial, sans-serif);
+  --block-font-basic: var(--arial), sans-serif;
   font-family: var(--block-font-basic);
   font-size: 12px;
   line-height: calc(16 / 12);
