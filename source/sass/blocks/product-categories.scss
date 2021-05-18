@@ -175,6 +175,7 @@
 
   &:hover::after {
     mask-position: 0;
+    transition: mask-position 0.1s;
   }
 }
 
