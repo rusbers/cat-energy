@@ -13,15 +13,6 @@
   }
 }
 
-.page-footer__logo {
-  align-self: center;
-  margin-bottom: 32px;
-
-  @media (min-width: 768px) {
-    margin: 0;
-  }
-}
-
 .page-footer__copy {
   font-family: var(--block-font-basic);
   font-size: 16px;
@@ -87,5 +78,13 @@
   @media (min-width: 768px) {
     margin: 0;
     margin-left: 33px;
+  }
+}
+
+.page-footer__footer-logo {
+  margin-bottom: 32px;
+
+  @media (min-width: 768px) {
+    margin: 0;
   }
 }
