@@ -1,6 +1,6 @@
 # Cat Energy
 
-### [**Online demo**](https://rusbers.github.io/1672121-cat-energy-22/)
+### [**Online demo**](https://rusbers.github.io/cat-energy/)
 
 #### Pages:  
 - `index.html`
